@@ -27,21 +27,21 @@ insert into empleados values('22666666','Jose
 Maria','Morales',400,3,'Secretaria');
 
 --3- Elimine el procedimiento llamado "pa_empleados_sueldo" si existe:
-if object_id('pa_empleados_sueldo') is not null
- drop pa_empleados_sueldo;
+if object_id('pa_empleados_sueldos') is not null
+ drop pa_empleados_sueldos;
 
 SELECT nombre,apellido,sueldo
 FROM Empleados;
 
 --4- Cree un procedimiento almacenado llamado "pa_empleados_sueldo" que
 --seleccione los nombres, apellidos y sueldos de los empleados.
-CREATE proc  pa_empleados_sueldo
+CREATE proc  pa_empleados_sueldos
 AS
 SELECT nombre,apellido,sueldo
 FROM Empleados;
 
 --5- Ejecute el procedimiento creado anteriormente
-exec pa_empleados_sueldo
+exec pa_empleados_sueldos
 
 
 --6- Elimine el procedimiento llamado
