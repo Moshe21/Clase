@@ -30,8 +30,8 @@ int main(){
 	while(1){
 		
 		int choice;
-		printf("\"---BIENVENIDO A LA BANCA DEL SANTI---\n");
-		printf("1. DEPOSIT\n2. WITHDRAWAL \n3. BALANCE ENQUIRY  \n4. EXIT/n ENTER YOUR CHOICE\t");	
+		printf("\n---BIENVENIDO A LA BANCA DEL SANTI---\n");
+		printf("1. DEPOSIT\n2. WITHDRAWAL \n3. BALANCE ENQUIRY  \n4. EXIT \n ENTER YOUR CHOICE\t");	
 		scanf("%d",&choice);
 		
 		switch (choice){
@@ -106,7 +106,7 @@ void balace(){
 	
 	x=validate(account_num_temp,password_temp);
 	
-	printf("\n Your account No: %d contrains Rs%d",account_num_temp,s[x].amount);
+	printf("\n Your account No: %d contrains Rs%d \n",account_num_temp,s[x].amount);
 	
 }
 
