@@ -30,7 +30,7 @@ int main(){
 	while(1){
 		
 		int choice;
-		printf("\n---BIENVENIDO A LA BANCA DEL SANTI---\n");
+		printf("\n---BIENVENIDO A LA BANCAMOSHE---\n");
 		printf("1. DEPOSIT\n2. WITHDRAWAL \n3. BALANCE ENQUIRY  \n4. EXIT \n ENTER YOUR CHOICE\t");	
 		scanf("%d",&choice);
 		
