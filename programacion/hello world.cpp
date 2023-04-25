@@ -4,7 +4,7 @@ int main (){
 	
 
 		
-	printf("ingrese su numerosdasdasd");
+	printf("ingrese su sadasdasd   asafdasd  numerxcvsdfgv");
 		
 	
 	
