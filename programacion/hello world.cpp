@@ -4,7 +4,7 @@ int main (){
 	
 
 		
-	printf("ingrese su numero");
+	printf("ingrese su numerosdasdasd");
 		
 	
 	
