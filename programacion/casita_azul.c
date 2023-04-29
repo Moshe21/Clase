@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 void menu_ing();
 void menu_reg();
@@ -11,11 +12,12 @@ char nom_user [];
 
 
 struct info_user{
-	char reg_nom_user[];
-	char reg_pass_user[];	
+ 
+	string reg_nom_user[];
+	string reg_pass_user[];	
 };
 
-struct info_user I[i]={};
+struct info_user I[i]={{],{},{}};
 
 int main (){
 	int f;
