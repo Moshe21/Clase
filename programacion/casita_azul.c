@@ -6,21 +6,24 @@ void menu_reg();
 void menu_prof();
 void menu_estu();
 
-int i;
+
+
+int i=0;
 char pass_user [];
 char nom_user [];
 
 
 struct info_user{
  
-	string reg_nom_user[];
-	string reg_pass_user[];	
+	char reg_nom_user[50];
+	char reg_pass_user[50];	
 };
 
-struct info_user I[i]={{],{},{}};
+struct info_user I[i];
 
 int main (){
 	int f;
+	int opcion
 	while(f!=3){
 		int opcion;
 		printf("BIENVENIDOS AL COLEGIO \n      CASITA AZUL\n 1.INGRESAR\n 2.REGISTRASE\n 3.EXIT\n ingrese una opcion\t");
