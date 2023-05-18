@@ -11,17 +11,15 @@
 
 --1- Eliminamos la tabla, si existe y la creamos:
 
-if object_id('empleados') is not null
- drop table empleados;
+create database taller_7;
+user taller_7;
 
 create table empleados(
- documento char(8),
- nombre varchar(20),
- apellido varchar(20),
- sueldo decimal(6,2),
- cantidadhijos tinyint,
- seccion varchar(20),
- primary key(documento));
+ dni char(8),
+ nombre varchar(100),
+ apellido varchar(225),
+ departamento int,
+ primary key(dni));
 
 
 --2- Ingrese algunos registros:
