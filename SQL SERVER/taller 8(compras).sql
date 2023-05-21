@@ -56,10 +56,8 @@ F_salida date,
 T_entrega int,
 F_entrega date,
 direccion varchar(60),
-
 --proveedor foranea
 -- item foranea
-
 primary key (N_solicitud)
 );
 
