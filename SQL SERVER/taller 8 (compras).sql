@@ -1,12 +1,12 @@
-﻿--=================================================================================================================================== 
+-=================================================================================================================================== 
 --PRACTICA 8 DE LENGUAJE ESTRUCTURADO SQL ("Educando S.A")
 --MOISES ZABALETA CRUZ
 --1033810224
 --Email: MZABALETAC@ACADEMIA.USBBOG.EDU.CO
 --================================================================================================================================ 
 
-create database EducandoBD;
-use EducandoBD;
+create database EducandoBD2;
+use EducandoBD2;
 
 create table Item(
 N_item varchar (4),
@@ -15,6 +15,7 @@ cantidad int,
 U_medida varchar (40),
 V_unidad int,
 V_total int,
+
 primary key (N_item)
 );
 
@@ -79,4 +80,6 @@ alter table solicitud
 	add constraint fk_solicitud_item
 	foreign key (N_item) 
 	references  item(N_item);
+
+
 
