@@ -19,33 +19,51 @@ public class Menu_Moshe {
         
         int op;
         boolean mseguir=true;
+        double valor1;
         
         Scanner teclado=new Scanner(System.in);
         
+        System.out.println("digite su primer valor");
+        valor1=teclado.nextInt();
+        
+        
         do{
             System.out.println("MENU PRINCIPAL");
-            System.out.println("1.Pesos a Dolares");
-            System.out.println("2.e");
-            System.out.println("3.opcion 3");
-            System.out.println("4.Salir");
+            System.out.println("Indique aque lo quiere convertir");
+            System.out.println("1 Pesos a Dolares");
+            System.out.println("2 Dolares a Pesos");
+            System.out.println("3 Pesos a Euros");
+            System.out.println("4 Euros a Pesos");
+            System.out.println("5 Pesos a Libras Esterlinas");
+            System.out.println("6 cc Esterlinas a Pesos");
+            System.out.println("7 Salir");
             System.out.println("Seleccione opcion:");
             op=teclado.nextInt();
             
             switch(op){
                 
                 case 1:
-                    System.out.println("ingreso opcion 1");
+                    System.out.println("Bienvenido Pesos a Dolares");
+                    
                     break;
                     
                 case 2:
-                    System.out.println("ingreso opcion 2");
+                    System.out.println("Bienvenido Dolares a Pesos");
                     break;
-                    
                 case 3:
-                    System.out.println("ingreso opcion 3");
+                    System.out.println("Bienvenido Pesos a Euros");
                     break;
-                case 4: 
-                    System.out.println("largate YA");
+                case 4:
+                    System.out.println("Bienvenido Euros a Pesos");
+                    break;
+                case 5:
+                    System.out.println("Bienvenido Pesos a Libras Esterlinas");
+                    break;
+                case 6:
+                    System.out.println("Bienvenido Libras Esterlinas a Pesos");
+                    break;                     
+                case 7: 
+                    System.out.println("largate YA, y se Feliz :)");
                     mseguir=false;
                     break;
             }
