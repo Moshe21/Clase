@@ -5,6 +5,13 @@
       "type": "java",
       "name": "Menu_Moshe",
       "request": "launch",
+      "mainClass": "POO.Menu_Moshe",
+      "projectName": "Clase_eb22d97a"
+    },
+    {
+      "type": "java",
+      "name": "Menu_Moshe",
+      "request": "launch",
       "mainClass": "menu_moshe.Menu_Moshe",
       "projectName": ""
     },
