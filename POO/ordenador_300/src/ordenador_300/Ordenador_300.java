@@ -19,50 +19,57 @@ public class Ordenador_300 {
         /* creacion los datos*/ 
      System.out.println("bienvenido a ordenador");
         
-      Scanner ingreso_data=new Scanner(System.in);   
+     Scanner ingreso_data=new Scanner(System.in);   
      
-      int mat2[][]=new int[3][3];
-      
-      int dato_menor=0, 
-          dato_mayor=0;
-      
 
-        for(int i=0;i==3;i++){
+      
+     int mat2[][]=new int[3][3];
+      
+     
+           
+                     
+     for(int i=0;i<3;i++){
 
-            for(int g=0;g==3;g++){
+        for(int g=0 ;g<3;g++){
                 System.out.println("fila "+(i)+" columna "+(g)+"  ingrese el dato:");
                 mat2[i][g]=ingreso_data.nextInt();
             }
         }
         
         /* imprimir los datos*/
-        for(int i=0;i==3;i++){
+        for(int i = 0;i<3;i++){
 
-            for(int g=0;g==3;g++){
+            for(int g=0;g<3;g++){
 
                 System.out.print(mat2[i][g]+"\t");
             }
             System.out.println("");
        }
-        
+        int dato_menor=mat2[1][1]; 
+        int dato_mayor=mat2[1][1];
         /* ordenar datos los datos*/
-        for(int i=0;i==3;i++){
-
-            for(int g=0;g==3;g++){
+        for(int i =0;i<3;i++){
+ 
+            for(int g =0;g<3;g++){
                 
                 if(mat2[i][g]<dato_menor){
                 
-                    mat2[i][g]=dato_menor;
+                    dato_menor=mat2[i][g];
                 }
-                if(mat2[i][g]>dato_menor){
+                if(mat2[i][g]>dato_mayor){
                 
-                    mat2[i][g]=dato_mayor;
+                    dato_mayor=mat2[i][g];
                 }
-               
+                  
             }
-            System.out.println("dato menor es: "+dato_menor);
-            System.out.println("dato menor es: "+dato_mayor);
+
+
        }
+
+    
+    System.out.println("dato menor es: "+dato_menor);
+    System.out.println("dato mayor es: "+dato_mayor);
     }
+    
     
 }

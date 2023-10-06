@@ -25,24 +25,42 @@ public class University_Moshe {
         String mat1[][];
         
         
-        mat1=new String[6][4];
+        
+        mat1=new String[2][4];
         
         int cant_C=0,
             cant_S=0,
             cant_A=0,
             cant_T=0;
+        int conv_int;
+        String titulo= "Administarcion";
+         
+        /*
+        String mat2[];
+        String titulo;
+        
+        for(int i=0;i<6;i++){
 
-        for(int i=0;i==6;i++){
+            
+                System.out.println("Datos de uan columna "+(i));
+                mat2[i]=ingreso_data.next();
+                titulo= mat2[i];
+            
+        }
+            */
+        for(int i=0;i<2;i++){
+            
+                
 
-            for(int g=0;g==4;g++){
+            for(int g=0;g<4;g++){
                 System.out.println("Estudiante "+(i)+" ingrese dato "+(g)+"  ingrese el dato:");
                 mat1[i][g]=ingreso_data.next();
             }
         }
          /*Impresion*/
-        for(int i=0;i==6;i++){
+        for(int i=0;i<2;i++){
 
-            for(int g=0;g==4;g++){
+            for(int g=0;g<4;g++){
 
                 System.out.print(mat1[i][g]+"\t");
 
@@ -52,34 +70,33 @@ public class University_Moshe {
          /*Contabilidad */
 
         /*administarcion */
-        for(int i=0;i==6;i++){
-
-             if(mat1[i][3]=="administarcion"){
+        for(int i=0;i<2;i++){
+                
+            conv_int=Integer.parseInt(mat1[i][4]);
+            
+            
+            
               
-                 int conv_int=nextInt(mat1[i][4]);
-                 cant_A=+conv_int;
-             }
-             if(mat1[i][3]=="Contabilidad"){
+                
+                 cant_A=cant_A+conv_int;
+             
+             if("Contabilidad".equals(mat1[i][3])){
               
-                  cant_C=+mat1[i][4];               
+                 
+                  cant_C=++conv_int;               
             } 
-            if(mat1[i][3]=="Sistema"){
+            if("Sistema".equals(mat1[i][3])){
               
-                  cant_S=+mat1[i][4];               
+               
+                  cant_S=+conv_int;               
             }   
+            cant_T=+conv_int;
         }
         
        System.out.println("el valor de la matricula de contabiliadad: "+cant_A);
        System.out.println("el valor de la matricula de contabiliadad: "+cant_C);
-       System.out.println("el valor de la matricula de administarcion: "+cant_A);
-       
-       for(int i=0;i==6;i++){
-
-            
-
-                  cant_T=+mat1[i][4];
-       }
-        /*Sistema
+       System.out.println("el valor de la matricula de administarcion: "+cant_S);
+       /*Sistema
        */
         
                 
