@@ -26,15 +26,14 @@ public class University_Moshe {
         
         
         
-        mat1=new String[2][4];
+        mat1=new String[6][4];
         
         int cant_C=0,
             cant_S=0,
             cant_A=0,
             cant_T=0;
         int conv_int;
-        String titulo= "Administarcion";
-         
+        
         /*
         String mat2[];
         String titulo;
@@ -48,7 +47,7 @@ public class University_Moshe {
             
         }
             */
-        for(int i=0;i<2;i++){
+        for(int i=0;i<6;i++){
             
                 
 
@@ -70,16 +69,16 @@ public class University_Moshe {
          /*Contabilidad */
 
         /*administarcion */
-        for(int i=0;i<2;i++){
+        for(int i=0;i<6;i++){
                 
             conv_int=Integer.parseInt(mat1[i][4]);
+           
             
-            
-            
+             if("administarcion".equals(mat1[i][3])){
               
                 
-                 cant_A=cant_A+conv_int;
-             
+                 cant_A=+conv_int;
+             }
              if("Contabilidad".equals(mat1[i][3])){
               
                  
@@ -90,13 +89,15 @@ public class University_Moshe {
                
                   cant_S=+conv_int;               
             }   
-            cant_T=+conv_int;
+            cant_T=++conv_int;
         }
         
        System.out.println("el valor de la matricula de contabiliadad: "+cant_A);
        System.out.println("el valor de la matricula de contabiliadad: "+cant_C);
        System.out.println("el valor de la matricula de administarcion: "+cant_S);
-       /*Sistema
+       
+       
+        /*Sistema
        */
         
                 
