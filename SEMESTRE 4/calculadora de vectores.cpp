@@ -9,7 +9,7 @@ int promedio_mat;
 
 int main(){
 
-	/*
+	
 //	------------------------------------------------------------------------------
 //	actividad 1
 	cout<<"1.calculadora C++"<<endl;
@@ -37,11 +37,11 @@ int main(){
 	
 	cout<<"-------------------------------------------------"<<endl;
 	cout<<"2.Promedio C++"<<endl;
-	cout<<"el promedio de todos elementos de vector "<<promedio<<endl;
+	cout<<"el promedio de todos elementos de vector "<<promedio_mat<<endl;
 
 
 
-*/
+
 
 //	------------------------------------------------------------------------------
 //	actividad 3
