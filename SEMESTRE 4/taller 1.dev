@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int vector[10];
+
+  
+    cout << "Ingrese 10 numeros enteros:" << endl;
+    for (int i = 0; i < 10; ++i) {
+        cout << "Numero " << i + 1 << ": ";
+        cin >> vector[i];
+    }
+
+   
+    cout << "Elementos del vector:" << endl;
+    for (int i = 0; i < 10; ++i) {
+        cout << vector[i] << " ";
+    }
+    cout << endl;
+
+  
+    int sumaPares = 0;
+    int cantidadPares = 0;
+    int sumaImpares = 0;
+
+    for (int i = 0; i < 10; ++i) {
+        if (vector[i] % 2 == 0) {
+            sumaPares += vector[i];
+            cantidadPares++;
+        } else {
+            sumaImpares += vector[i];
+        }
+    }
+
+    
+    double promedioPares;
+    if (cantidadPares > 0) {
+        promedioPares = sumaPares / cantidadPares;
+    } else {
+        promedioPares = 0; 
+    }
+
+    
+    cout << "Promedio de los numeros pares: " << promedioPares << endl;
+    cout << "Sumatoria de los numeros impares: " << sumaImpares << endl;
+
+    return 0;
+}
+

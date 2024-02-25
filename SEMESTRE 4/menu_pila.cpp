@@ -56,6 +56,7 @@ int main(){
 					break;
 					
 			case 6: mseguir=false;
+		
 					break;
 				
 		}
@@ -64,6 +65,5 @@ int main(){
 		
 	
 	}
-	while(mseguir==true);	
-	
+	while(mseguir==true);
 }
