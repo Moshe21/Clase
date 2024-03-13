@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"name": "HV MOSHE",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "pagina base"
+	},
+	"extensions": {
+		"recommendations": []
+	}
+}

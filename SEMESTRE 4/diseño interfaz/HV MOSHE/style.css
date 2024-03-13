@@ -1,0 +1,13 @@
+.container{
+    padding: 10px;
+    border: 1px solid   #ccc;
+    background-color: aqua;
+
+
+}
+
+h2 {
+    color: rgba(0, 255, 21, 0.596);
+    font-family: verdana;
+    font-size: 100%;
+}
