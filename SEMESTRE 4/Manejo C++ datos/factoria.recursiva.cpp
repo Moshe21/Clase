@@ -4,6 +4,7 @@ using namespace std;
 
 int num=5;
 int fac=1;
+
 int factorial(int n){
 	
 	if(n==1){
@@ -11,13 +12,13 @@ int factorial(int n){
 		return 1;
 		
 	}else{
-		cout<<n<<" + ";
+		
+		cout<<vector[n]<<endl;
+		
 		fac=n+factorial(n-1);
 	}	
 	return fac;
 }
-
-
 int main(){
 	
 	
@@ -25,7 +26,4 @@ int main(){
 	cin>>num;
 	//cout<<num<<"=! ";
 	cout<<" = "<<factorial(num);
-	
-	
-	
 }

@@ -1,5 +1,9 @@
 body {
-    background-color: #373839;
+    background-color: #353643;
+  }
+
+  .fondo{
+    background-color: #353643;
   }
   
   #cv {
@@ -22,12 +26,13 @@ body {
     color: #889eb1;
     
   }
-  .foto_perfil{
+  .nombre{
 
-    display:-ms-flexbox;
-    
-
+    font-family:'Times New Roman', Times, serif;
 
   }
- 
+  .audio{
+
+    color: #050404;
+  }
   
