@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stack>
+
 using namespace std;
 
 
@@ -8,6 +9,8 @@ int dato,b_dato,sw=0;
 
 
 int main(){
+
+
 
 	for(int i=1;i<=4;i++){
 	system("cls");

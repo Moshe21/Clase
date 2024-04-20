@@ -7,6 +7,45 @@ bool mseguir=true;
 
 int main(){
 	
+	menu();
+	
+}
+int menu(){
+	
+	do{
+	cout<<"Bienvenidos Menu Arboles"<<endl; 
+	cout<<"1. Ingrese los elemento" <<endl;
+	cout<<"2. Mostrar Dato"<<endl;
+	cout<<"SALIR" <<endl;
+	cout<<"Escoja una Opcion" <<endl;
+	cin>>op;
+	switch(op){
+		
+		case 1: cout<<"Ingrese los elementos al arbol"<<endl;
+					cin>>dato;
+					insertar(arbol,dato);
+					
+			break;
+		case 2: cout<<"Mostrar Dato"<<endl;
+					mostrar (arbol,contador);		
+			break;
+		case 3: mseguir=false;
+			break;
+	}
+	system("pause");
+	
+	system("cls");
+	
+	
+	}
+	while (mseguir==true);
+	
+			
+}
+/*
+int main(){
+	
+
 	do{
 	cout<<"Bienvenidos Menu Supremo"<<endl; 
 	cout<<"1. opcion 1" <<endl;
@@ -32,6 +71,7 @@ int main(){
 	
 	}
 	while (mseguir==true);
-	
-			
 }
+*/
+
+
