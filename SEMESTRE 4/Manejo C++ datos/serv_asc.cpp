@@ -1,24 +1,161 @@
-#import <iostream>
+#include <iostream>
 #include <stack>
+#include <cstdlib>
 
 using namespace std;
 //stack <int> asc_1,asc_2;
 //int Pisos[2]=[5,6];
-int asc_1[3],asc_2[3];
-int cupo
-int Pisos[3][3]={{3,0,0}
-				 {2,0,0}
-				 {0,2,0}};
+int cant_pisos=3;
 
-int dato;
 
 int main(){
+		
+	cout<<"servi_asc "<<endl;
+	cout<<endl;
 	
-	cout<<"servi_asc"<<endl;
 	
-	for(int i=0;i<=3;i++){
-		cupo=cupo+asc_1[i]
+	//variables
+	int asc_1[cant_pisos]={},
+		asc_2[cant_pisos]={};
+	int cupo_1,cupo_2;
+	int per_pisos;
+	int Pisos[cant_pisos]={};
+	int desc=(cant_pisos-1);
+	int asc=0;
+		
+	for(int j=0;j<cant_pisos;j++){			
+		//for(int i=0;i<cant_pisos;i++){
+			
+		Pisos[j]= rand() % 2;
+			
+	//	}
 	}
+	
+	
+	
+	
+	//impresion inicial
+		cout<<"inicios pisos :"<<endl;
+		for(int i=0;i<cant_pisos;i++){
+						
+			for(int j=0;j<cant_pisos;j++){
+				cout<<"  "<<Pisos[j];
+				per_pisos=per_pisos+Pisos[j];
+				}	
+				
+				//cout<<endl;
+			
+			cout<<" piso "<< i+1<<" es: "<<per_pisos<<endl;	
+			per_pisos=0;
+			}
+			
+		
+
+	
+
+	//cupo de ascensor 1
+	for(int j=0;j<cant_pisos;j++){
+		
+			
+		
+			if(j==desc){		
+				desc=desc-1;
+				Pisos[j]=Pisos[j]+asc_1[j];
+				cupo_1=cupo_1-1;
+				
+			}
+			else if((cupo_1+Pisos[j])<=6){
+			
+			cupo_1=cupo_1+Pisos[j];
+			
+			asc_1[j]=asc_1[j]+Pisos[j];
+			Pisos[j]=0;
+			
+			//cout << "Ascensor 1 deja " << Pisos[j][i] << " en el piso " << j+1 << endl;
+			}
+
+		
+				
+		
+		//	cout<<endl;
+		//	cout<<endl;
+		
+
+	}
+	//cupo de ascensor 2
+	for(int j=(cant_pisos-1);j>=0;j--){
+	
+			
+			
+			if(j==asc){	
+				asc=asc+1;	
+				Pisos[j]=Pisos[j]+asc_2[j];
+				if(asc_2[j]<6){
+						cupo_2=cupo_2-1;
+						cout<<"se bajo pasajero: "<<j<<" cupo: "<<cupo_2<<endl;	
+				}
+
+		
+			}	
+			else if((cupo_2+Pisos[j])<=6){
+			
+				cupo_2=cupo_2+Pisos[j];
+				asc_2[j]=asc_2[j]+Pisos[j];
+				Pisos[j]=0;
+				//cout<<"     "<<asc_2[i]<<endl;
+				//cout << "Ascensor 2 subiendo " << Pisos[j][i] << " en el piso " << j+1  << endl;
+				}
+			
+			
+			
+		//	cout<<endl;
+		//		cout<<endl;
+	}
+
+		//cupo de pisos
+		cout<<endl;
+		cout<<"total cupo ascensor 1 es:  "<<cupo_1<<endl;
+		cout<<"total cupo ascensor 2  es: "<<cupo_2<<endl;
+			cout<<endl;
+		//impresion final
+		for(int i=0;i<cant_pisos;i++){			
+			for(int j=0;j<cant_pisos;j++){
+				cout<<"  "<<Pisos[j];
+				per_pisos=per_pisos+Pisos[j];
+				}	
+				
+				//cout<<endl;
+			
+			cout<<" piso "<< i+1<<" es: "<<per_pisos<<endl;	
+			per_pisos=0;
+		}
+			cout<<endl;
+		
+		for(int i=0;i<cant_pisos;i++){
+			
+			if(asc_1[i]<0){
+				cout<<"     "<<asc_1[i];
+			}
+			
+			
+			}	
+			cout<<"     "<<endl;
+		for(int i=0;i<cant_pisos;i++){
+			
+			if(asc_1[i]<0){
+				cout<<"     "<<asc_2[i];
+			}
+		}		
+	
+		
+	
+		
+		
+	
+}
+
+
+
 	/*
 	if(Pisos[3][]1){
 	
@@ -33,29 +170,7 @@ int main(){
 	else if(Piso==1){
 	
 		for(int b=0 ;b<2;b++){*/
-		cout<<"cima de la asc_1 1 es "<<asc_1.top()<<endl;
-		
-		Pisos3=asc_1.top();
-		
-		asc_1.pop();
-		cout<<"cima de la asc_1 1 es "<<Pisos<<endl;
-		//}
-	}
-}
 
-
-
-
-
-asc_1=asc_1+Pisos3
-Pisos3=0;
-
-
-asc_1=asc_1+Pisos2
-Pisos3=0;
-
-asc_1=asc_1+Pisos1
-Pisos3=0;
 
 
 
