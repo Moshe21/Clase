@@ -1,0 +1,38 @@
+body {
+    background-color: #353643;
+  }
+
+  .fondo{
+    background-color: #353643;
+  }
+  
+  #cv {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h2 {
+    color: #007bff;
+  }
+  
+  h4 {
+    color: #b1b1b1;
+  }
+  
+ li, p {
+    color: #889eb1;
+    
+  }
+  .nombre{
+
+    font-family:'Times New Roman', Times, serif;
+
+  }
+  .audio{
+
+    color: #050404;
+  }
+  
