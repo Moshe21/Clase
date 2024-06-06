@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    padding: 0%;
+    background-color: #99937e;
+}
+
+.navbar {
+    text-align: center;
+    font-size:30px;
+    background-color: #000000;
+    width: 100%;
+    height: 200px;
+    margin: 0%;
+    overflow: hidden;
+    position: fixed;
+}
+
+.navbar a {
+    font-size:20px;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+.navbar a:hover {
+    background-color: #1808a5;
+    
+}
+
+.section {
+    
+    padding: 50px;
+    font-size:30px;
+}
+.img_1 {
+    text-align:left;
+    Left:100;
+    top:100;
+    width: 500px;
+    height: 500px;
+    
+}
+
+
+.buscador {
+    transform: scale(2.5);
+    text-align:center;
+    color: rgb(111, 2, 145);
+}
+h1 {
+    color: blue;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{		
+    font-size:50px;
+    text-align: center;
+    color: blue;
+}
+
+.text_1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 255, 255);
+}
+.primer_cuadro{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(0, 60, 255);
+    background-color: rgb(194, 199, 197);
+    margin: 10px;
+    padding: 30px;
+    text-align:justify;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    float: left; 
+}
+.segundo_cuadro{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 136, 0);
+    background-color: rgb(194, 199, 197);
+    margin:10px;
+    padding: 30px;
+    text-align: justify;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    float: left;
+    
+}
+
+
+.img_promo{
+   
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    
+}
+.p_promo{
+    padding-top: 10px;
+    font-size: 150px;
+    color: rgb(255, 255, 255);
+    position: absolute;  
+
+    transform: url('img_promo');
+    text-shadow: 5px 8px 12px black;
+    
+
+}
+p{
+
+    padding: 7px;
+    text-align: justify; 
+    
+}
+.espacio{
+    height: 100px;
+}

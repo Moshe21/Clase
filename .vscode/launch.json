@@ -2,6 +2,20 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Menu_Moshe",
+      "request": "launch",
+      "mainClass": "POO.Menu_Moshe",
+      "projectName": "Clase_eb22d97a"
+    },
+    {
+      "type": "java",
+      "name": "Menu_Moshe",
+      "request": "launch",
+      "mainClass": "menu_moshe.Menu_Moshe",
+      "projectName": ""
+    },
+    {
       "name": "(Windows) Iniciar",
       "type": "cppvsdbg",
       "request": "launch",
@@ -12,7 +26,6 @@
       "environment": [],
       "console": "externalTerminal"
     },
-    
     {
       "name": "(gdb) Adjuntar",
       "type": "cppdbg",
@@ -21,16 +34,16 @@
       "MIMode": "gdb",
       "miDebuggerPath": "/path/to/gdb",
       "setupCommands": [
-          {
-              "description": "Habilitar la impresión con sangría para gdb",
-              "text": "-enable-pretty-printing",
-              "ignoreFailures": true
-          },
-          {
-              "description": "Establecer tipo de desensamblado en Intel",
-              "text": "-gdb-set disassembly-flavor intel",
-              "ignoreFailures": true
-          }
+        {
+          "description": "Habilitar la impresión con sangría para gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Establecer tipo de desensamblado en Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
       ]
     },
     {
