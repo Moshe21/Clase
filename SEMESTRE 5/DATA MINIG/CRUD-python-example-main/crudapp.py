@@ -31,14 +31,14 @@ def create_salaries(connection, id, nombre, pais, fecha_nacimiento, descripcion)
     print(f"New salary for employee '{id}' has been inserted.")
 
 # Method to update a registry
-def update_employee(connection,  id, descripcion):
+def update_employee(connection, id,descripcion):
     cursor = connection.cursor()
     query = """
     UPDATE artistas 
     SET descripcion = %s
     WHERE id = %s
     """
-    cursor.execute(query, ( descripcion))
+    cursor.execute(query, ( descripcion,))
     connection.commit()
     print(f"Employee {id} updated successfully.")
 
