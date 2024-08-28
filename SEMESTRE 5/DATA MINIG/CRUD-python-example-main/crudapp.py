@@ -46,7 +46,7 @@ def update_employee(connection,  id, fecha_nacimiento, descripcion):
 def delete_employee(connection, id):
     cursor = connection.cursor()
     query = "DELETE FROM artistas WHERE id = %s"
-    cursor.execute(query, (id))
+    cursor.execute(query, (id,))
     connection.commit()
     print(f"Employee {id} deleted successfully.")
 
@@ -55,7 +55,7 @@ def main():
 
     # Calling method delete
     print("Delete employee")
-    #delete_employee(connection,9)
+    delete_employee(connection,8)
 
      #Calling method create a new salary
     #create_salaries(connection, "7", nombre, pais, fecha_nacimiento, descripcion)
