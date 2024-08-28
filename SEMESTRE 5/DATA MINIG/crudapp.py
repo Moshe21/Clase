@@ -14,10 +14,10 @@ def create_connection(config):
     return connection
 
 # Method to read salaries
-def read_Bookings(connection,table,id):
+def read_Bookings(connection):
     cursor = connection.cursor()
-    query = "select * from %s  where %s < 15"
-    cursor.execute(query,(table,id))
+    query = "select * from Airlines  where AirlineID < 15"
+    cursor.execute(query)
     salaries = cursor.fetchall()
     for salary in salaries:
         print("Bookings: "+str(salary))
@@ -67,7 +67,7 @@ def main():
     
     # Calling method read
     #print("Read salaries upper 100000")Bookings
-    read_Bookings(connection,'Airlines','AirlineID')
+    read_Bookings(connection)
 
 
 if __name__ == "__main__":

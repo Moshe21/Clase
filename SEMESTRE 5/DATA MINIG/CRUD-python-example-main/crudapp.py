@@ -14,51 +14,51 @@ def create_connection(config):
     return connection
 
 # Method to read salaries
-def read_Bookings(connection,id):
+def read_Bookings(connection):
     cursor = connection.cursor()
-    query = "select * from Airlines  where %s < 15"
-    cursor.execute(query,(id))
+    query = "select * from artistas where id <10"
+    cursor.execute(query)
     salaries = cursor.fetchall()
     for salary in salaries:
         print("Bookings: "+str(salary))
 
 # Method to insert a new salary registry
-def create_salaries(connection, BookingID, PassengerID, FlightID, BookingDate, SeatNumber):
+def create_salaries(connection, id, nombre, pais, fecha_nacimiento, descripcion):
     cursor = connection.cursor()
-    query = "INSERT INTO Bookings (BookingID, PassengerID, FlightID, BookingDate, SeatNumber) VALUES(%s,%s,%s,%s,%s)"
-    cursor.execute(query,(BookingID, PassengerID, FlightID, BookingDate, SeatNumber))
+    query = "INSERT INTO artistas (id, nombre, pais, fecha_nacimiento, descripcion) VALUES(%s,%s,%s,%s,%s)"
+    cursor.execute(query,(id, nombre, pais, fecha_nacimiento, descripcion))
     connection.commit()
-    print(f"New salary for employee '{BookingID}' has been inserted.")
+    print(f"New salary for employee '{id}' has been inserted.")
 
 # Method to update a registry
-def update_employee(connection,  BookingID, BookingDate, SeatNumber):
+def update_employee(connection,  id, fecha_nacimiento, descripcion):
     cursor = connection.cursor()
     query = """
-    UPDATE Bookings 
-    SET BookingDate = %s, SeatNumber = %s
-    WHERE BookingID = %s
+    UPDATE artistas 
+    SET fecha_nacimiento = %s, descripcion = %s
+    WHERE id = %s
     """
-    cursor.execute(query, (BookingDate, SeatNumber,BookingID))
+    cursor.execute(query, (fecha_nacimiento, descripcion))
     connection.commit()
-    print(f"Employee {BookingID} updated successfully.")
+    print(f"Employee {id} updated successfully.")
 
 # Method to delete an employee
-def delete_employee(connection, BookingID):
+def delete_employee(connection, id):
     cursor = connection.cursor()
-    query = "DELETE FROM Bookings WHERE BookingID = %s"
-    cursor.execute(query, (BookingID,))
+    query = "DELETE FROM artistas WHERE id = %s"
+    cursor.execute(query, (id))
     connection.commit()
-    print(f"Employee {BookingID} deleted successfully.")
+    print(f"Employee {id} deleted successfully.")
 
 def main():
     connection = create_connection(config)
 
     # Calling method delete
-    #print("Delete employee")
-    #delete_employee(connection,7)
+    print("Delete employee")
+    #delete_employee(connection,9)
 
      #Calling method create a new salary
-   # create_salaries(connection,11, 9, 10, '2024-08-19 14:00:00', 'Creado')
+    #create_salaries(connection, "7", nombre, pais, fecha_nacimiento, descripcion)
 
 
     # Calling method update
@@ -67,7 +67,7 @@ def main():
     
     # Calling method read
     #print("Read salaries upper 100000")Bookings
-    read_Bookings(connection,'AirlineID')
+    read_Bookings(connection)
 
 
 if __name__ == "__main__":
