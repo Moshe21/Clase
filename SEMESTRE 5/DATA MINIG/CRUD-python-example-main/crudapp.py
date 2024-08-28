@@ -31,22 +31,22 @@ def create_salaries(connection, id, nombre, pais, fecha_nacimiento, descripcion)
     print(f"New salary for employee '{id}' has been inserted.")
 
 # Method to update a registry
-def update_employee(connection, id,descripcion):
+def update_employee(connection,descripcion,id):
     cursor = connection.cursor()
     query = """
     UPDATE artistas 
     SET descripcion = %s
     WHERE id = %s
     """
-    cursor.execute(query, ( descripcion,))
+    cursor.execute(query, ( descripcion,id))
     connection.commit()
-    print(f"Employee {id} updated successfully.")
+    print(f"Employee '{id}' updated successfully.")
 
 # Method to delete an employee
 def delete_employee(connection, id):
     cursor = connection.cursor()
     query = "DELETE FROM artistas WHERE id = %s"
-    cursor.execute(query, (id,))
+    cursor.execute(query, (id))
     connection.commit()
     print(f"Employee {id} deleted successfully.")
 
@@ -55,15 +55,15 @@ def main():
 
     # Calling method delete
    # print("Delete employee")
-   # delete_employee(connection,8)
+    #delete_employee(connection,2)
 
      #Calling method create a new salary
-    #create_salaries(connection,  8, '2024-08-19', 'nuevo 8')
+    #create_salaries(connection, '4', 'moshe', 'colombia tu papa', '2007-09-10', 'no soy el 2 pero soy el 4')
 
 
     # Calling method update
     #print("Update employee data")
-    #update_employee(connection,  7, "el 8 fue saltado")
+    #update_employee(connection,  3, "'el 2 fue saltado'")
     
     # Calling method read
     #print("Read salaries upper 100000")Bookings
