@@ -62,8 +62,8 @@ def main():
 
 
     # Calling method update
-    print("Update employee data")
-    update_employee(connection,  7, "el 8 fue saltado")
+    #print("Update employee data")
+    #update_employee(connection,  7, "el 8 fue saltado")
     
     # Calling method read
     #print("Read salaries upper 100000")Bookings
