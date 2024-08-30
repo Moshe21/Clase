@@ -5,7 +5,7 @@
 </head>
 <body>
 
-    <form action="insert.php" method="post">
+    <form action="insert.php" method="POST">
         <table>
             <tr>
                 <th>Nombre</th>

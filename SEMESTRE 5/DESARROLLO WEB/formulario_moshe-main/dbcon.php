@@ -1,11 +1,11 @@
 <?php
 
 // declaracion de variables
-$sever="7jk.h.filess.io";
-$user="ServerMoshe_physicalno";
-$pass="b0d735504a274566d1dc93860af71b821220adb3";
-$dbname="ServerMoshe_physicalno";
-$db_port="3307";
+$sever="sql.freedb.tech";
+$user="freedb_ADMIN_MOSHE2";
+$pass="3Br$%RtKc8dYcE5";
+$dbname="freedb_My_server";
+$db_port="3306";
 
 
 $conx1=mysqli_connect($sever,$user,$pass,$dbname,$db_port);
