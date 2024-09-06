@@ -14,7 +14,7 @@ $res =mysqli_query($conx1,$insertsql);
 
 //VALIDAR SI LA INFORMACION YA EXISTE
 IF(mysqli_affected_rows($conx1) > 0){
-    echo("La persona ya existe </br>)";
+    echo"La persona ya existe </br>";
   
 }
 
