@@ -9,6 +9,10 @@ function connectarDB():mysqli{
 
         echo ">Error: No se pudo conectar";
         exit;
+    }else{
+
+        return $db;
+
     }
 
 
