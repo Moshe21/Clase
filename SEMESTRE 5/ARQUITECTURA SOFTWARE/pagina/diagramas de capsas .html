@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura en Capas - Ecommerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f9;
+            min-height: 100vh;
+            
+        }
+
+        .container {
+            width: 60%;
+            margin: 20px;
+        }
+
+        .layer {
+            background-color: #ffffff;
+            border: 2px solid #3a7ff2;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .layer:hover {
+            background-color: #e3f2fd;
+            transform: translateY(-5px);
+        }
+
+        .layer h2 {
+            color: #3a7ff2;
+            margin-top: 0;
+        }
+
+        .layer p {
+            margin: 5px 0;
+            line-height: 1.6;
+        }
+
+        .arrow {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #3a7ff2;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="layer">
+            <h2>Capa de Presentación (UI)</h2>
+            <p>- HTML, CSS, JavaScript (React, Angular)</p>
+            <p>- Carrito, Catálogo, Páginas de Productos, Perfil de Usuario</p>
+        </div>
+
+        <div class="arrow">↓</div>
+
+        <div class="layer">
+            <h2>Capa de Lógica de Negocio</h2>
+            <p>- Gestión de productos, usuarios, pedidos</p>
+            <p>- Validaciones, procesamiento de pagos, descuentos</p>
+            <p>- Lenguajes Backend: Node.js, Python, Java</p>
+        </div>
+
+        <div class="arrow">↓</div>
+
+        <div class="layer">
+            <h2>Capa de Servicios (API)</h2>
+            <p>- API REST / GraphQL</p>
+            <p>- Microservicios: Autenticación, Inventario, Checkout</p>
+            <p>- Integración con sistemas externos (Pagos, Envíos)</p>
+        </div>
+
+        <div class="arrow">↓</div>
+
+        <div class="layer">
+            <h2>Capa de Persistencia (Base de Datos)</h2>
+            <p>- Bases de Datos (MySQL, MongoDB)</p>
+            <p>- Almacenamiento de productos, usuarios, pedidos</p>
+            <p>- Gestión de inventarios, catálogos</p>
+        </div>
+
+        <div class="arrow">↓</div>
+
+        <div class="layer">
+            <h2>Capa de Seguridad</h2>
+            <p>- SSL/TLS, OAuth, Autenticación y Autorización</p>
+            <p>- Encriptación de datos sensibles, Protección contra ataques</p>
+        </div>
+
+        <div class="arrow">↓</div>
+
+        <div class="layer">
+            <h2>Capa de Cache</h2>
+            <p>- Redis, Memcached</p>
+            <p>- Cacheo de productos, sesiones, resultados de búsqueda</p>
+        </div>
+
+        <div class="arrow">↓</div>
+
+        <div class="layer">
+            <h2>Capa de Analítica y Reportes</h2>
+            <p>- Google Analytics, BI Tools</p>
+            <p>- Generación de informes de ventas, tráfico, comportamiento</p>
+        </div>
+    </div>
+
+</body>
+</html>
