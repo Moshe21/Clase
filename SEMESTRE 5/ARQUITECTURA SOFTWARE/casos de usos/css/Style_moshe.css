@@ -1,0 +1,23 @@
+a#vaciar-carrito {
+    background-color: #c91717;
+}
+
+a#procesar-pedido {
+    background-color: #168300;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #b05be9;
+    border-color: #6a00f5;
+}
+
+.bg-dark {
+    background-color: #2098b6 !important;
+}
+
+.navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+    background-color: #d4d4d4 !important;
+}

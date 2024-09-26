@@ -1,0 +1,15 @@
+#cargando {
+    display: none;
+}
+
+
+
+
+
+a#procesar-pedido {
+  background-color: #168300;
+}
+
+a#vaciar-carrito {
+  background-color: #c91717;
+}
