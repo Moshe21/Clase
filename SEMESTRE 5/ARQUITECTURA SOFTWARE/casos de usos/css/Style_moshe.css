@@ -21,3 +21,10 @@ a#procesar-pedido {
     float: none;
     background-color: #d4d4d4 !important;
 }
+
+.col-sm-6 {
+    text-align: right;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}

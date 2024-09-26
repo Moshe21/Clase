@@ -3734,3 +3734,10 @@ a#procesar-pedido {
 a#vaciar-carrito {
   background-color: #c91717;
 }
+
+.col-sm-6 {
+  text-align: right;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
