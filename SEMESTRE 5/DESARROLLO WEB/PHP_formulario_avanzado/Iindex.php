@@ -22,6 +22,8 @@ $nombreempleado='';
 $mensaje='';
 $fecha='';
 
+
+require 'include/header.php';
 ?>
 
 
