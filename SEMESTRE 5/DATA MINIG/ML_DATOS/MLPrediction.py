@@ -1,12 +1,13 @@
 import pandas as pd
 import random
 import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_squared_error, r2_score
+#from sklearn.linear_model import LinearRegression
+#from sklearn.model_selection import train_test_split
+#from sklearn.metrics import mean_squared_error, r2_score
 
 from Capture import CapturaDatos
 from MongoClass import MongoClass
+
 
 class PrepareData:
 
@@ -22,7 +23,7 @@ class PrepareData:
         capture = MongoClass()
         print(capture.storeDataMany(self.listData))
 
-    def monthChoise(self,quarter):
+    def monthChoise(self, quarter):
         months = {
             1: ['January', 'February', 'March'],
             2: ['April', 'May', 'June'],
@@ -31,8 +32,8 @@ class PrepareData:
         }
         return random.choice(months.get(quarter))
 
-    def pandasDataPrepared(self):
-        df = pd.DataFrame(self.listData,columns=['Year','Quarter','Provider','Income','amountSMS'])
+""" def pandasDataPrepared(self):
+        df = pd.DataFrame(self.listData, columns=['Year', 'Quarter', 'Provider', 'Income', 'amountSMS'])
         df['Quarter'] = df['Quarter'].astype(int)
         df['Month'] = df['Quarter'].apply(self.monthChoise)
         df['Month_Num'] = df['Month'].map({
@@ -40,7 +41,7 @@ class PrepareData:
             'July': 7, 'August': 8, 'September': 9, 'October': 10, 'November': 11, 'December': 12
         })
 
-        X = df[['Year','Quarter','amountSMS','Month_Num']]
+        X = df[['Year', 'Quarter', 'amountSMS', 'Month_Num']]
         Y = df['Income']
 
         x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
@@ -58,8 +59,17 @@ class PrepareData:
         plt.title('Regresión Lineal - Income')
         plt.show()
         mse, r2
+"""
+
+
+    def enviar_a_mongodb():
+        # Inserta los datos en MongoDB
+        if self.jsonPrepared:
+            self.collection.insert_many(self.jsonPrepared)
+            print("Datos enviados a MongoDB.")
 
 prueba = PrepareData()
 prueba.prepareJson()
 prueba.pandasDataPrepared()
+prueba.enviar_a_mongodb()
 
