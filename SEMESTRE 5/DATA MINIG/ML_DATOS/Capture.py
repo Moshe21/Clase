@@ -1,9 +1,14 @@
 import requests
+from pymongo.mongo_client import MongoClient
 
 class CapturaDatos:
     def __init__(self):
         self.dataJson = []
         self.jsonPrepared = []
+        # Conexión a MongoDB
+        self.client = MongoClient("mongodb+srv://moshezabacruz:Moshe21@cluster0.lq65f.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")  # Cambia esto por tu URI
+        self.db = self.client["moshe_DB"]  # Reemplaza por tu nombre de base de datos
+        self.collection = self.db["moshe_datos2"]  # Reemplaza por tu nombre de colección
 
     def Captura(self):
         resultado_busqueda = requests.get(f"https://www.datos.gov.co/resource/m5pi-7cau.json")
@@ -53,3 +58,19 @@ class CapturaDatos:
             jsonClean['amountSMS'] = self.dataJson[ind]['cantidad_de_mensajes']
             self.jsonPrepared.append(jsonClean)
         return self.jsonPrepared
+
+    def enviar_a_mongodb(self):
+        # Inserta los datos en MongoDB
+        if self.jsonPrepared:
+            self.collection.insert_many(self.jsonPrepared)
+            print("Datos enviados a MongoDB.")
+
+# Crear una instancia de la clase y ejecutar los métodos
+captura_datos = CapturaDatos()
+captura_datos.Captura()
+captura_datos.limpieza()
+captura_datos.enviar_a_mongodb()
+
+
+
+
