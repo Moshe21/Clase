@@ -2,9 +2,9 @@
 
 // declaracion de variables
 $sever="sql.freedb.tech";
-$user="freedb_ADMIN_MOSHE2";
-$pass="3Br$%RtKc8dYcE5";
-$dbname="freedb_My_server";
+$user="freedb_ADMIN_MOSHE7";
+$pass="UzQ&d?gpTQ6q@k*";
+$dbname="freedb_My_server_moshe";
 $db_port="3306";
 
 
