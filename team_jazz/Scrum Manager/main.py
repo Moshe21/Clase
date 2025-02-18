@@ -24,16 +24,13 @@ def login_system():
         messagebox.showerror("Error","Contraseña es campo obligatorio")
     else:
         try:
-            if datos[5] == "offline":
+           
                 
-                if entrada_usuario == datos[1] and entrada_password == datos[2]:
-                    if datos[4] == 'gestor':
-                        login.destroy()
-            
-                        validar_us = conexion()
-                        conectar("online", entrada_usuario)
+                if entrada_usuario == 1 and entrada_password == 1:
+                    if entrada_usuario == 1:
+                        
                         abrir_modulo_comercial(validar_us.us(entrada_usuario)[0][0])
-                        desconectar("offline",entrada_usuario)   
+                        
                     elif datos[4] == 'coordinador':
                         login.destroy()
 
@@ -66,8 +63,7 @@ def login_system():
                         desconectar("offline",entrada_usuario)   
                 else:
                     messagebox.showerror("Error","Usuario o contraseña inválidos")
-            else:
-                messagebox.showerror("Error", "El usuario que ingresaste se encuentra en línea.")
+            
         except Exception as ep:
             messagebox.showerror("Error","Usuario o contraseña inválidos")
     
