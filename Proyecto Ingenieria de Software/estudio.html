@@ -1,0 +1,918 @@
+<html lang="es-CO" dir="ltr" class=""><head>
+    <meta charset="utf-8">
+    <title>Cursos Virtuales</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Q10">
+    <meta name="author" content="Q10 S.A.S.">
+    <meta name="version" content="1.0.0.0">
+    <meta name="q10:version" content="1">
+    <meta name="q10:menu_cache" content="true">
+    <meta name="q10:tenant" content="JackProduction1">
+
+    <meta name="accept-language" content="es-CO">
+
+    <!-- Google Tag Manager -->
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-SEF3EVQ100&amp;l=dataLayer&amp;cx=c&amp;gtm=45He5350v9188093658za200&amp;tag_exp=102067808~102482433~102539968~102558064~102587591~102605417~102640600~102717422~102788824"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MFP6P8SP"></script><script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MFP6P8SP');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <link href="/Content/main?v=HksMCa6RmDjIXI9kyGTSssS2Wf7VRP0j726yAk8WvSE1" rel="stylesheet">
+
+    <link href="/Content/fontawesome?v=3iEv8vqPidB6TVfgNOGrLoJr-SPH_mV3YwpggEk2_ao1" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://i.icomoon.io/public/dee811bf7b/Jack/style.css">
+    <link href="/Content/bootstrap-select?v=zwY2pIUSBFsK-xonr3bwjzKnYTAqHt15bLkXaRw1bVo1" rel="stylesheet">
+
+    <link href="/Content/selectize?v=1ujbpDdJjDgAkra_64EQYKKELi0SOPb7BEM08ef5Hi01" rel="stylesheet">
+
+    <link href="/Content/datetimepicker?v=DdKtPaKMoH6hzSMgdMlYqXqzqtctw-AmdvEbaWRiGbU1" rel="stylesheet">
+
+    <link href="/Content/jqueryfileupload?v=MDe7BU8mrPuN8v81OAkRk39PaZFzeGyoV51n5LUrIAA1" rel="stylesheet">
+
+    <link href="/Content/sweet-alert?v=L8eMNY_IsnrsB3ub7odDIwJ7lu9p33K88Q2_Xhat-M41" rel="stylesheet">
+
+    <link href="/Content/jqueryfancybox?v=PjYjLNAJVdbN5DNF-JkgMKMr1aRw1ORNH6sZnZr27T01" rel="stylesheet">
+
+    <link href="/Content/bootstrap-slider?v=nU4TyHDPwwOHDtfGOvc02HPoHwgVp8wOsUcMNkiq6K01" rel="stylesheet">
+
+    <link href="/Content/comunidad/personas/capturaFoto?v=MRljIOcqWbIZId1StRjQ-YzS0cNfbptKIlDzjRYx3S41" rel="stylesheet">
+
+    <link href="/Content/guided/tour?v=fLb5CGCH8n2362e00DTJbrScKVGfLnj2X1qCfw6lKpY1" rel="stylesheet">
+
+    <link href="/Content/cke5?v=SgzIu3kGl5yYqUqb0QIlPY6VXH7uPFVANgcREybPuSk1" rel="stylesheet">
+
+    <link href="/Content/plyr?v=Dkp6NeIBwgq9BnhTvo8PSG21f-ZPsd21Hqw8Tw9maMs1" rel="stylesheet">
+
+
+        <style>
+
+            :root{
+                --institutional-color : #125DA2;
+                --institutional-light-color :#417DB4;
+                --institutional-dark-color: #0E4A81 ;
+                --purple-color: #563B8A;
+                --success-bg-color: #ddeadc;
+                --success-dark-color: #347037;
+                --info-bg-color: #d3e7f0;
+                --info-dark-color: #003656;
+                --warn-bg-color: #f5eec7;
+                --warn-dark-color: #484635;
+                --dang-bg-color: #f2dede;
+                --dang-dark-color: #a94442;
+            }
+
+            footer,.q10navbar,.q10button.btn-primary,.modal-header,.popover-title,.q10color-entidad {
+                background-color: #125DA2 ;
+            }
+            .q10button.btn-primary {
+                border-color: #0E4A81 ;
+            }
+            .q10button.btn-primary:hover,.q10button.btn-primary:focus {
+                background-color: #417DB4 ;
+            }
+            .q10navbar .navbar-nav .open > a, .q10navbar .navbar-nav .open > a:hover, .q10navbar .navbar-nav .open > a:focus,.q10navbar .navbar-nav > li > a:hover {
+                background-color: #417DB4 !important;
+            }
+
+            @media (max-width: 767px) {
+                .q10navbar .navbar-nav .open .dropdown-menu .divider {
+                    background-color: #0E4A81 !important;
+                }
+                .search-form {
+                    padding-right: 0px;
+                    width: 100%;
+                }
+
+                .navbar-collapse .space-sm{
+                    margin-bottom: 20px;
+                }
+            }
+
+            .slider-selection {
+                background: #417DB4 !important;
+            }
+
+            .open > .dropdown-toggle.btn-primary.q10button  {
+                color: #fff;
+                background-color: #417DB4;
+                border-color: #417DB4;
+            }
+
+            .sweet-alert {
+                padding-bottom: 24px;
+            }
+
+            .sweet-alert h2{
+                margin-top: 5px !important;
+            }
+
+            .sweet-alert button.confirm  {
+                color: #fff;
+                background-color: #125DA2 !important;
+                border-color: #125DA2 !important;
+            }
+
+            .sweet-alert button.confirm:hover  {
+                color: #fff;
+                background-color: #417DB4 !important;
+                border-color: #417DB4 !important;
+            }
+
+            .popover.tour .popover-close {
+                color: #417DB4 !important;
+            }
+
+            .popover.tour .popover-navigation .btn {
+                border-color: #417DB4 !important;
+                background-color: #417DB4 !important;
+            }
+        </style>
+    <link href="/Content/notifications?v=ZM2Dv7baG-M6nWWyTDcxm5etfA_4Xl2adCI-hepa_E81" rel="stylesheet">
+
+
+    
+
+            <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+            <script>
+                var googletag = googletag || {};
+                googletag.cmd = googletag.cmd || [];
+            </script><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9wSqI5i0iwGdf6L1CERNdmsTPgVu44ewj8QxTBYgsv1LCPUVF7YmWOvTappqB1139jAymxUW/RO8zmMqo4zlAAAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A+d7vJfYtay4OUbdtRPZA3y7bKQLsxaMEPmxgfhBGqKXNrdkCQeJlUwqa6EBbSfjwFtJWTrWIioXeMW+y8bWAgQAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503040101/pubads_impl.js" async=""></script><link href="https://securepubads.g.doubleclick.net/pagead/managed/dict/m202503060101/gpt" rel="compression-dictionary">
+            <script>
+                googletag.cmd.push(function () {
+            googletag.defineSlot('/6622005/Jack_Estudiantes', [160, 600], 'div-gpt-ad-1552496341866-0').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+            </script>
+
+    
+    
+
+
+
+
+
+    
+    <link href="/favicon_q10.ico" rel="shortcut icon" type="image/x-icon">
+    <style>
+        #link-masker {
+            position: absolute;
+            z-index: 99999;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+    </style>
+<style>.cke{visibility:hidden;}</style><style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFP6P8SP"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    
+    
+    
+
+
+
+
+
+
+<nav class="navbar navbar-inverse q10navbar">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">
+            <img src="https://q10storage.blob.core.windows.net/q10academico-public/461953554208/461953554208.png?nocache" style="background-color:#fff;">
+        </a>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <div class="space-sm"></div>
+                <div class="navbar-left" style="width:150px; padding-left:150px; padding: 10px 0px;">
+                </div>
+<ul class="nav navbar-nav"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">Institucional&nbsp;<b class="caret"></b></a>
+<ul class="dropdown-menu"><li><a href="/EditarEstudiante">Actualización de información</a></li><li class="dropdown-submenu"><a href="javascript:;">Estudiantes&nbsp;<b class="caret visible-xs-inline-block"></b></a>
+<ul class="dropdown-menu"><li class="divider"></li><li><a href="/Observador">Observador</a></li></ul></li><li class="dropdown-submenu"><a href="javascript:;">Solicitudes&nbsp;<b class="caret visible-xs-inline-block"></b></a>
+<ul class="dropdown-menu"><li><a href="/SolicitudesInstitucionales/NuevaSolicitudEstudiante">Crear solicitud</a></li><li><a href="/SolicitudesInstitucionales/Estudiante/Consultar">Consultar solicitudes</a></li></ul></li><li class="dropdown-submenu"><a href="javascript:;">Bienestar institucional&nbsp;<b class="caret visible-xs-inline-block"></b></a>
+<ul class="dropdown-menu"><li><a href="/Encuesta/Responder">Responder encuestas</a></li><li><a href="/OfertasLaborales">Ofertas laborales</a></li></ul></li></ul></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">Académico&nbsp;<b class="caret"></b></a>
+<ul class="dropdown-menu"><li><a href="/Horario">Horarios</a></li><li><a href="/Prematricula">Prematrículas</a></li><li class="dropdown-submenu"><a href="javascript:;">Educación virtual&nbsp;<b class="caret visible-xs-inline-block"></b></a>
+<ul class="dropdown-menu"><li><a href="/EducacionVirtual/CursosVirtuales">Cursos virtuales</a></li><li><a href="/AulasVirtuales">Aulas virtuales</a></li></ul></li><li class="dropdown-submenu"><a href="javascript:;">Certificaciones&nbsp;<b class="caret visible-xs-inline-block"></b></a>
+<ul class="dropdown-menu"><li><a href="/CertificacionesPersona">Certificados</a></li></ul></li></ul></li><li><a href="/ResultadosEstudiante">Resultados de evaluación</a></li><li><a href="/EstadoCuenta">Estado de cuenta</a></li></ul>        <ul class="nav navbar-nav navbar-right">
+
+
+            
+
+<input id="bloqueoDependencias" name="bloqueoDependencias" type="hidden" value="False">
+
+    <li class="dropdown dropdown-notifications">
+        <a href="#notifications-panel" class="dropdown-toggle" data-toggle="dropdown" title="Notificaciones">
+            <i data-count="0" class="glyphicon glyphicon-bell notification-icon"></i>
+        </a>
+        <div class="dropdown-container dropdown-position-bottomright">
+            <div class="dropdown-toolbar notifications-title">
+                Notificaciones
+            </div>
+            <ul class="dropdown-menu notifications">
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/CursosVirtuales/3032/Ingreso/TareasController?idRecurso=13023" data-id="5898888" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Comentario en tarea</span>
+                                    <p class="notification-desc">El docente ha comentado tu respuesta en la tarea <b>"Lección 3"</b></p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2025-03-05 22:06:56" title="5/03/2025 10:06:56 p.m.">Hace 19 horas</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/CursosVirtuales/3032/Ingreso/TareasController?idRecurso=13022" data-id="5898834" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Comentario en tarea</span>
+                                    <p class="notification-desc">El docente ha comentado tu respuesta en la tarea <b>"Lección 2"</b></p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2025-03-05 21:34:15" title="5/03/2025 9:34:15 p.m.">Hace 19 horas</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="notification" style="cursor:pointer" data-href="/EducacionVirtual/CursosVirtuales/3032/Ingreso/TareasController?idRecurso=13021" data-id="5898796" title="" data-toggle="" data-container="body">
+                            <div class="media">
+                                <div class="media-body">
+                                    
+                                        <span class="notification-title "><i class="fa fa-info-circle"></i> Comentario en tarea</span>
+                                    <p class="notification-desc">El docente ha comentado tu respuesta en la tarea <b>"Lección 1"</b></p>
+
+                                    <div class="notification-meta">
+                                        <small class="timestamp contextual-date" data-date="2025-03-05 21:22:10" title="5/03/2025 9:22:10 p.m.">Hace 20 horas</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+            </ul>
+
+            <div class="dropdown-footer text-center">
+            </div><!-- /dropdown-footer -->
+        </div><!-- /dropdown-container -->
+    </li><!-- /dropdown -->
+
+
+
+        <li class="dropdown user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            MOISES
+                            <b class="caret"></b>
+                        </a>
+                    <ul class="dropdown-menu">
+
+                        
+
+
+
+
+
+                        <li><a href="#acercaQ10" data-toggle="modal">Acerca de Q10</a></li>
+
+                            <li class="divider"></li>
+
+
+
+
+
+
+                                                    <li><a href="/CambiarContrasena" class="modal-form">Cambiar contraseña</a></li>
+
+                        <li><a href="javascript:void($('#logoutForm').submit())">Cerrar sesión</a></li>
+                    </ul>
+        </li>
+        </ul>
+    </div>
+
+
+</nav>
+<!-- Modal -->
+<div class="modal fade" id="support">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Q10</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p><i class="icon-comments icon-4x"></i></p>
+                            <p>Chatea con nosotros</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p><i class="icon-bug icon-4x"></i></p>
+                            <p>Reporta un problema</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- Modal -->
+<div class="modal fade" id="acercaQ10" style="overflow-y: hidden;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Acerca de Q10</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container estiloAcerca" style="width: 558px;">
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                            <img style="height: 140px; width: 230px;" src="https://q10storage.blob.core.windows.net/q10academico-public/000000000/Resources/LogoQ10_SOlO.png">
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                            <div class="jumbotron">
+                                <h4>
+                                    <span style="font-weight: bold;">Prestigio y productividad para su institución</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 text-center">
+                            <a href="http://www.q10.com/" target="_blank">© 2025 Q10 S.A.S </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<style>
+    .estiloAcerca .jumbotron {
+        margin-bottom: 23px;
+        padding-top: 32px;
+        padding-bottom: 28px;
+        padding-right: 26px;
+        padding-left: 41px;
+    }
+</style>
+
+<form action="/Salir" data-ajax="true" data-ajax-failure="jack.handleAjaxError" data-ajax-method="POST" data-ajax-success="onLogoutSuccess" id="logoutForm" method="post" style="display:none;"></form>
+<style>
+    .head-ent a,
+    .head-ent:hover a {
+        color: #969393 !important;
+        background-color: transparent !important;
+        cursor: default;
+        font-style: italic;
+    }
+
+    .ent-ul {
+        top: -41px !important;
+    }
+</style>
+
+
+
+<style>
+    a.change.disabled {
+        pointer-events: none;
+    }
+
+    .footer-censa {
+        width: 265px;
+        background-color: #EEEEEE;
+        position: absolute;
+        text-align: center;
+        font-size: 11px;
+        border: 1px solid #ccc;
+        border-top: none;
+        display: none;
+        z-index: 5;
+    }
+
+        .footer-censa > a {
+            padding: 5px;
+            display: block;
+        }
+
+    div.footer-censa.vis {
+        display: block;
+    }
+</style>
+
+<div class="container-full">
+    <div class="row clearfix" style="margin-top:-20px;">
+        <div class="col-lg-12 col-md-12 main-col">
+            <div class="row messages hidden-print">
+    <div class="col-lg-12 col-md-12 messagesInner affix-top" data-spy="affix" data-offset-top="20">
+    </div>
+</div>
+
+            
+
+<div id="container-view">
+    
+
+
+
+<div class="row">
+    <div class="col-lg-12 col-md-12">
+        <div class="top-bar">
+<form action="/EducacionVirtual/CursosVirtuales/Lista?Length=15" data-ajax="true" data-ajax-begin="$('.form-loading').show();" data-ajax-complete="$('.form-loading').hide();" data-ajax-failure="jack.handleAjaxError" data-ajax-loading="#filters-loading" data-ajax-method="GET" data-ajax-mode="replace" data-ajax-success="jack.initPlugins('#resultsDiv'); searchFormCallback();" data-ajax-update="#resultsDiv" id="filters_form" method="post">                <input type="hidden" value="1" id="pagina" name="pagina">
+                    <style>
+                        .other-filters {
+                            padding-top: 0px;
+                        }
+                    </style>
+</form>        </div>
+    </div>
+</div>
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="mainPanel">
+            <div class="results" id="resultsDiv">
+                
+
+
+
+
+
+        <div style="margin: auto; max-width: 650px;">
+            <ul class="nav nav-tabs" id="tabsEducacionVirtual">
+                <li class="active"><a href="#progreso" data-toggle="tab">Cursos en progreso</a></li>
+                <li><a href="#completado" data-toggle="tab">Cursos completados</a></li>
+                    <li><a href="#archivados" data-toggle="tab">Cursos Archivados</a></li>
+            </ul>
+            <div class="tab-content" style="margin-top: 25px;">
+                <div class="tab-pane active" id="progreso">
+                                <a href="/EducacionVirtual/CursosVirtuales/2971/Ingreso/Lista">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 30%;position: absolute; background-color: #6f5499">
+                                        </div>
+                                        <div class="div-info">
+                                            <h4 style="margin-top: 0px;">
+                                                <label class="label-well">
+                                                    <span title="" data-toggle="tooltip" data-container="body" data-original-title="F350 F_ ANÁLISIS Y VISUALIZACIÓN DE TABLEROS INTERACTIVOS_40H"> F350 F_ ANÁLISIS Y VISUALIZACIÓN DE TABLEROS INTERACTIVOS_40H</span>
+                                                </label>
+                                            </h4>
+                                            <h5 style="margin-top: 4px;margin-bottom: 0px;">
+                                                CARLOS MIGUEL ARIAS PEREZ
+                                            </h5>
+                                        </div>
+                                        <div style="right: 0;">
+                                            <span style="font-size: 23px;display: inline-block;margin: 15px;">
+                                                30%
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="/EducacionVirtual/CursosVirtuales/2972/Ingreso/Lista">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;position: absolute; background-color: #5cb85c">
+                                        </div>
+                                        <div class="div-info">
+                                            <h4 style="margin-top: 0px;">
+                                                <label class="label-well">
+                                                    <span title="" data-toggle="tooltip" data-container="body" data-original-title="F_22_002 POWER PLATFORMS FUNDAMENTALS_20H"> F_22_002 POWER PLATFORMS FUNDAMENTALS_20H</span>
+                                                </label>
+                                            </h4>
+                                            <h5 style="margin-top: 4px;margin-bottom: 0px;">
+                                                CARLOS MIGUEL ARIAS PEREZ
+                                            </h5>
+                                        </div>
+                                        <div style="right: 0;">
+                                            <span style="font-size: 23px;display: inline-block;margin: 15px;">
+                                                0%
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="/EducacionVirtual/CursosVirtuales/3033/Ingreso/Lista">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 83%;position: absolute; background-color: #f0ad4e">
+                                        </div>
+                                        <div class="div-info">
+                                            <h4 style="margin-top: 0px;">
+                                                <label class="label-well">
+                                                    <span title="" data-toggle="tooltip" data-container="body" data-original-title="F_22_002 POWER PLATFORMS FUNDAMENTALS_20H"> F_22_002 POWER PLATFORMS FUNDAMENTALS_20H</span>
+                                                </label>
+                                            </h4>
+                                            <h5 style="margin-top: 4px;margin-bottom: 0px;">
+                                                ARISTOBULO MARTINEZ CRUZ
+                                            </h5>
+                                        </div>
+                                        <div style="right: 0;">
+                                            <span style="font-size: 23px;display: inline-block;margin: 15px;">
+                                                83%
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                </div>
+                <div class="tab-pane" id="completado">
+                                <a href="/EducacionVirtual/CursosVirtuales/3032/Ingreso/Lista">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 100%;position: absolute; background-color: #5cb85c">
+                                        </div>
+                                        <div class="div-info">
+                                            <h4 style="margin-top: 0px;margin-bottom: 0px;">
+                                                <label class="label-well">
+                                                    <span title="" data-toggle="tooltip" data-container="body" data-original-title="F350 F_ ANÁLISIS Y VISUALIZACIÓN DE TABLEROS INTERACTIVOS_40H"> F350 F_ ANÁLISIS Y VISUALIZACIÓN DE TABLEROS INTERACTIVOS_40H</span>
+                                                </label>
+                                            </h4>
+                                            <h5 style="margin-top: 4px;margin-bottom: 0px;">
+                                                ARISTOBULO MARTINEZ CRUZ
+                                            </h5>
+                                        </div>
+                                        <div style="right: 0;">
+                                            <span style="font-size: 23px;display: inline-block;margin: 15px;">
+                                                100%
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                </div>
+                <div id="archivados" class="tab-pane">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    No hay cursos archivados
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .progress {
+                position: relative;
+                height: 60px;
+            }
+
+                .progress > div {
+                    position: absolute;
+                    height: 100%;
+                    color: #000;
+                }
+
+                    .progress > div:nth-child(2) {
+                        padding: 10px;
+                        padding-right: 80px;
+                    }
+
+            h4 .label-well {
+                width: 100%;
+                height: 19px;
+                margin-bottom: 0px;
+            }
+
+            h4 label.label-well span {
+                left:0px;
+                top: 0px;
+            }
+
+            .div-info{
+                    width:100%;
+                }
+
+            .div-info h4{
+                margin-bottom:0px;
+            }
+        </style>
+
+
+
+            </div>
+            <div class="form-loading">
+                <div>
+                    <i class="fa fa-spinner fa-spin fa-5x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="form-view"></div>
+
+
+
+        </div>
+            <div class="visible-lg visible-md ads-col" style="margin-top:4px; margin-right:4px; position:absolute; right:0;">
+
+
+                
+
+<div class="adds body">
+
+        <div id="div-gpt-ad-1552496341866-0" style="height:600px; width:160px;" data-google-query-id="CK-n-b259osDFdsiTwgd_LMvaQ">
+            
+        <div id="google_ads_iframe_/6622005/Jack_Estudiantes_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/6622005/Jack_Estudiantes_0" name="google_ads_iframe_/6622005/Jack_Estudiantes_0" title="3rd party ad content" width="160" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-load-complete="true" data-google-container-id="1" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+</div>
+
+            </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<form id="frm-log" target="_blank" method="POST" action="/Autenticar">
+    <input type="hidden" name="hash">
+</form>
+
+
+
+
+    <div class="modal fade" id="master-modal"></div>
+    <div class="modal fade" id="secundary-modal"></div>
+    <div class="modal fade" id="extra-modal" style="margin-top: 40px;"></div>
+        <footer class="hidden-print">
+            <div class="container-fluid">
+                <p>
+                    © Q10
+
+                </p>
+            </div>
+        </footer>
+
+
+
+    <script src="/bundles/jquery?v=iVHlqnNKiL7xcqRKhDRe_aPo3tzjcjhztZ5gQqOeGSg1"></script>
+
+
+    <script src="/bundles/jqueryval?v=-qvrR3Itf4Nk5CITtahXVvJppyOZOUOQewP-xeGYy_U1"></script>
+
+    <script src="/bundles/jqueryglobalize?v=03phBv1IjTUFbKozYYgVpOWPvDGZya5vz7NWnAQRPTo1"></script>
+
+    <script src="/bundles/bootstrap?v=ifqjQ4I6KabVcqt9-cVHO-YyH_H5__ulDCQgYWUeIUM1"></script>
+
+    <script src="/bundles/bootstrap-slider?v=GQOnQtqk5NfGMYtKAjAcJ8Ae5kMvreeHRNprtqjd35I1"></script>
+
+    <script src="/bundles/cookiesjs?v=CkWanZNZWnikGFr9iZ43nDYE37e_Ifyb1ULnIlP-CUk1"></script>
+
+
+    <script src="/bundles/typeahead?v=ti1ObsVyAF7x6PJ56GOnSa8w4rR1tSp66vq-uRsnNHA1"></script>
+
+    <script src="/bundles/bootstrap-select?v=f8hqQqqw7TvoJOKl4JWsPfiYlcV11QbZcs-CfZ22hr81"></script>
+
+    <script src="/bundles/selectize?v=rAn4pZNUeYQYZTdGT85y65fNyWE2jPQe2rya6Zwxxqc1"></script>
+
+    <script src="/bundles/formatCurrency?v=af55eMIbAjg8WLiWfxR1cVsxtTVman6yaGD9Ik6ZK9k1"></script>
+
+    <script src="/bundles/notifications?v=KcB9nq4-irv5-jM-WFXeiJiHOoMUbiBXzfua8gY-Xrw1"></script>
+
+    <script src="/signalr/hubs"></script>
+    <script src="/bundles/moment?v=rRIUTxajkAHZvU-RuGslAYe3nz9klIs_50vJ0z0TNcg1"></script>
+
+    <script src="/bundles/datetimepicker?v=RLoNRK6yjhvbtwRzInOixTd4EyYIV_YPjnbcORuEkf81"></script>
+
+    <script src="/bundles/fileupload?v=hlaXUPk4UMSiY-GNX4znfnz9XQaCg614M6bHUUuDT1k1"></script>
+
+    <script src="/bundles/plyr?v=myMmc3Y2zmaJ_6HtWfTgL1sZuToQwkxvQrEoO3-PBfE1"></script>
+
+    <script src="https://cdn.jwplayer.com/libraries/w4YgE2qd.js"></script>
+    <script type="text/javascript">
+        var CKEDITOR_BASEPATH = '/scripts/ckeditor/';
+    </script>
+
+    <script src="/bundles/ckeditor?v=_InKorEytW7MN9wJB38-ckDLe_tF_xsnkHqlwPQ_J-Q1"></script>
+
+    <script src="/bundles/ckeditor/others?v=RulDJ-piCT5LFSjKQ7TYs5dGdv_MqJHF3yjPVhTBe6I1"></script>
+
+    <script src="/bundles/sweet-alert?v=1c0acGNBo9xHi9nGpW22bAmiv55mH0UsB4FTVP39lZ01"></script>
+
+
+    <script src="/bundles/jqueryfancybox?v=apcQYwjGmAWJ6Wgkj-11HQjmoo_CAXlLANYLvwjKSgs1"></script>
+
+    <script src="/bundles/app/main?v=5vHtPDqeqhYNtyajEYHiW1K2jOIhnoPygvMnBKTkmCo1"></script>
+
+    <script src="/bundles/app/guidedtour?v=QudkelHclM2W5KUjfiAJfVu2dY_yqydY0cPfH0MrN0g1"></script>
+
+    <script src="/bundles/knockout?v=AgbYtzOXVQFQsybHUBWVjmUjPc2TObAPySgtB37RQkA1"></script>
+
+
+    <iframe name="google_ads_top_frame" id="google_ads_top_frame" style="display: none; position: fixed; left: -999px; top: -999px; width: 0px; height: 0px;"></iframe><script>
+        $("document").ready(function () {
+            $('#link-masker').remove();
+        });
+    </script>
+
+    <script>
+        jack.dateFormat = 'D/MM/YYYY';
+        jack.timeFormat = 'h:mm a';
+    </script>
+    <script type="text/javascript">
+        jack.htLicense = 'd7437-e0295-ed9a4-9fc20-f531a';
+        jack.Ckeditor5License = 'Q2o0bkdjNG1wcGVrd3FWRkEya1hqc2dlRVRNUU11TkJvdHFXSlcxcEk0ZnNnZz09LU1qQXlOREExTVRJPQ==';
+    </script>
+
+        <script>
+            jack.momentTimeZone = "America/Bogota";
+            jack.setLocaleExtend('es-CO', 'COP', 0, false, 'es-CO');
+            jack.setCustomsText({"Evaluaciones Cursos Rotativos":"Evaluaciones cursos rotativos","Indicadores de Logros":"Indicadores de desempeño","Fecha Exped. Documento":"Fecha Exped. Documento","El docente":"El docente","Docentes de Apoyo":"Docentes de apoyo","Jornadas":"Jornadas","Tipos Pensión":"Tipos cuotas","Docente":"Docente","Nivel":"Nivel","Lugar de exped. Documento":"Lugar de exped. Documento","Indicador de Logro":"Indicador de desempeño","Del programa":"Del programa","La Asignatura":"La asignatura","Asignatura":"Asignatura","Tipos de programas":"Tipos de programas","Curso Rotativo":"Curso rotativo","Aprendizajes Esenciales":"Aprendizajes esenciales","Asignaturas":"Asignaturas","Notas Crédito":"Notas crédito","Municipio":"Municipio","Rec":"Rec","Tipos Indicadores Logros":"Tipos indicadores desempeño","Jornada":"Jornada","Fecha vencimiento documento":"Fecha vencimiento documento","Homologar":"Homologar","Prog":"Prog","Las Jornadas":"Las jornadas","Asignatura Relacionada":"Asignatura relacionada","Periodos":"Períodos","El Programa":"El programa","Docentes":"Docentes","Asignaturas Relacionadas":"Asignaturas relacionadas","Programas":"Programas","Tipo de programa":"Tipo de programa","Niveles":"Niveles","Prácticas":"Prácticas","Tipos de Seguimientos Práctica":"Tipos de seguimientos práctica","Requisito de Grado":"Requisito de grado","Homologada":"Homologada","Areas - Asignaturas":"Areas - Asignaturas","Cuantitativo":"Cuantitativo","Pensión":"Cuota","Fecha Venc. Documento":"Fecha Venc. Documento","Coordinador":"Coordinador","Programa":"Programa","Fecha Venc.":"Fecha Venc.","Estudiantes por Estado de Practica - Competencias":"Estudiantes por estado de practica - Competencias","Las Asignaturas":"Las asignaturas","Período":"Período","Práctica":"Práctica","Porcentaje de CREE":"Porcentaje de CREE","Requisito de Matrícula":"Requisito de matrícula","Evaluaciones":"Evaluaciones","Tipo Indicador":"Tipo indicador","Departamento":"Departamento","Barrio":"Barrio","Encuestas Prácticas Laborales":"Encuestas prácticas laborales","Requisitos de Matrícula":"Requisitos de matrícula","relacionada":"relacionada","Acudientes":"Familiares","Nota Crédito":"Nota crédito","Sedes - Jornadas":"Sedes - jornadas","Requisitos de Grado":"Requisitos de grado","Recuperación":"Recuperación","Nit":"NIT","Estudiantes por asesor de Prácticas":"Estudiantes por asesor de prácticas","Sede - Jornada":"Sede - jornada","Periodo":"Período","Sede Jornada":"Sede Jornada","Recuperaciones":"Recuperaciones","La Jornada":"La jornada","Acudiente":"Familiar","Requisitos":"Requisitos","Imprimir Información Práctica":"Imprimir información práctica","Cancelado por inasistencia":"Cancelado por inasistencia","Pagaré":"Pagaré","Prácticas Laborales":"Prácticas laborales","Copiar Indicadores de Logro":"Copiar indicadores de desempeño","Estudiantes por Estado de Practica":"Estudiantes por Estado de practica","Parámetros Evaluación Prácticas":"Parámetros evaluación prácticas","Tipos Indicadores de Logros":"Tipos indicadores de desempeño","Fecha expedición documento":"Fecha expedición documento","Lugar de expedición documento":"Lugar de expedición documento","Aprendizaje Esencial":"Aprendizaje esencial","Sedes - Jornadas - Programas":"Sedes - jornadas - programas","Homologación":"Homologación","Fecha Exped.":"Fecha Exped.","Práctica Laboral":"Práctica laboral","Registrar Acudiente":"Registrar acudiente","Hoja de Vida":"Hoja de vida","Cursos Rotativos":"Cursos rotativos","Paz y Salvo":"Paz y salvo"});
+            jack.setCurrencyCulture({"COP":"es-CO","USD":"en-US","EUR":"es-ES","PAB":"es-PA","PEN":"es-PE","CRC":"es-CR","GTQ":"es-GT","ARS":"es-AR","CLP":"es-CL","MXN":"es-MX","BOB":"es-BO","PYG":"es-PY","UYU":"es-UY","HNL":"es-HN","DOP":"es-DO","VEF":"es-VE","NIO":"es-NI","ANG":"nl-CW"});
+        </script>
+
+
+
+    
+    
+    
+
+
+    <script>
+
+         function onLogoutSuccessInteractuar() {
+             localStorage.setItem('LOGOUT-URL', "https://interactuar.q10.com");
+             localStorage.removeItem("zendesk-jwt");
+         }
+
+         function onLogoutSuccess(data) {
+             location.href = data.url;
+             localStorage.setItem('LOGOUT-URL', data.url);
+             localStorage.removeItem("zendesk-jwt");
+         }
+
+         $('.seleccion-rol').on("click", function (e) {
+             var id = $(this).data('id');
+
+             $.ajax({
+                 url: '/cambiarrol',
+                 data: { id: id },
+                 type: 'POST',
+                 success: function () {
+                     location.replace('/');
+                 },
+                 error: jack.handleAjaxError
+             });
+
+             e.preventDefault();
+         });
+
+         $('.seleccion-estudiante').on("click", function (e) {
+             var id = $(this).data('id');
+
+             $.ajax({
+                 url: '/CambiarEstudianteReferido',
+                 data: { id: id },
+                 type: 'POST',
+                 success: function () {
+                     location.reload();
+                 },
+                 error: jack.handleAjaxError
+             });
+
+             e.preventDefault();
+         });
+
+         $(".search-form.censa").on("click", ".search-btn", function (e) {
+             $(".search-form.censa").submit();
+             return false;
+         });
+
+         $(".search-form.formPers").on("click", ".search-btn", function (e) {
+             //Se obtiene el texto para buscar por el
+             $this = $(this);
+             var texto = $(".search-form.formPers").find("input.searchPers.tt-input").val();
+             var url = $this.attr("href") + (texto ? "?texto=" + texto : "");
+             $this.attr("href", url);
+         });
+
+         $("input[name='text-search']").on("focus", function () {
+             $("div.footer-censa").addClass("vis");
+         });
+
+         $("input[name='text-search']").on("focusout", function () {
+             setTimeout(function () {
+                 $("div.footer-censa").removeClass("vis");
+             }, 500);
+         });
+
+         $(".search-form.censa").on("submit", function () {
+
+             var busqueda = $("input[name='text-search']").val();
+
+             if (busqueda) {
+                 $.ajax({
+                     url: '/Personas/BuscarPersonaIdentificacion',
+                     data: { txt: busqueda },
+                     type: 'Get',
+                     success: function (data) {
+                         if (data) {
+                             if (data.indexOf("Lista") != -1) {
+                                 jack.openModal(data);
+                             } else {
+                                 location.href = data;
+                             }
+                         } else {
+                             jack.alert("No se encontró ninguna persona con la identificación especificada.")
+                         }
+
+                         $("input[name='text-search']").val(null);
+
+                     }
+                 });
+             } else {
+                 jack.alert("Por favor ingrese una identificación para realizar la búsqueda.");
+             }
+             return false;
+         });
+
+    </script>
+
+<script src="/bundles/app/notificaciones?v=tERdqsEThWhPwVxWNJF1toYV1LEBCbHdUhR_XMZJWmk1"></script>
+
+
+    
+    <script src="/bundles/app/mundialR?v=kgfmeAzQqL8Vz_0GcEzgbt3-LeGntYClpKEGuOgLBVI1"></script>
+
+    
+    <script src="/bundles/app/shared/simpleLayout?v=33S5ZXPwqVw-LJn266GV_9mMCfjz1mGmcMEAIfhiSB81"></script>
+
+    
+    <script>
+
+        //Para evitar el doble click al crear el curso escondemos el link.
+        $("#resultsDiv").on("click", "a.crearCurso", function (e) {
+            $(this).parent().find(".crearCurso").hide();
+            $(this).parent().find(".temp").show();
+        });
+
+    </script>
+
+
+    <script>
+        function searchFormCallback() {
+            var form = $("form#filters_form");
+            var caller = form.data("caller");
+            form.data("caller", null);
+
+            if (caller === "modal") {
+                jack.closeModal();
+                var msg = form.data("msg");
+                form.data("msg", null);
+                if (msg) jack.showSuccessMessage(msg);
+            }
+            else if (caller === "view") {
+                jack.slidingLayout.refreshSidebar(false);
+                jack.closeFormInView();
+                var msg = form.data("msg");
+                form.data("msg", null);
+                if (msg) jack.showSuccessMessage(msg);
+            }
+        }
+
+        $("#filters_form").on("click", "a.export", function (e) {
+            var totalRegistros = $("#TotalResultados").val();//Este control esta en _Paginacion.cshtml
+            if (totalRegistros > 10000) {
+                e.preventDefault();
+
+                var num = totalRegistros.toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g, '$1.');
+                num = num.split('').reverse().join('').replace(/^[\.]/, '');
+
+                jack.alert("No es posible exportar la información ya que supera la cantidad máxima de registros a descargar.<br/><br/> (Actual: " + num + " - Máximo: 10.000 registros). <br/><br/> Por favor utilice filtros para segmentar la búsqueda.");
+            }
+        });
+    </script>
+
+
+
+
+    <script>
+        window.addEventListener('storage', function (event) {
+            if (event.key == 'LOGOUT-URL' && event.newValue) {
+                location.href = event.newValue;
+                localStorage.setItem('LOGOUT-URL', '');
+                this.localStorage.clear();
+            }
+        });
+    </script>
+
+
+
+<div style="all: unset;"><div style="all: unset;"></div></div><fencedframe id="ps_caff" style="display: none;"></fencedframe><iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe></body><iframe name="goog_topics_frame" src="https://securepubads.g.doubleclick.net/static/topics/topics_frame.html" style="display: none;"></iframe></html>
