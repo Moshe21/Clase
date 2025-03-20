@@ -1,0 +1,8 @@
+fare_id,price,currency_type,payment_method,transfers,agency_id,transfer_duration
+1,2950,COP,0,,1,6600
+2,2950,COP,0,,2,6600
+3,2950,COP,0,,3,6600
+4,0,COP,0,,4,6600
+5,2950,COP,0,,5,6600
+6,2950,COP,0,,6,6600
+7,2950,COP,0,,7,6600
