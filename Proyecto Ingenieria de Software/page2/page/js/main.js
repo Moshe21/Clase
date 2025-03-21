@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <i class="fas fa-book-reader mb-2"></i> ${module.title}
                             </h3>
                             <p class="card-text">${module.description}</p>
-                            <a href="./module${module.id}.html?id=${module.id}" class="btn btn-primary">
+                            <a href="./module.html?id=${module.id}" class="btn btn-primary">
                                 <i class="fas fa-arrow-right"></i> Ver módulo
                             </a>
                         </div>
@@ -70,9 +70,9 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // Inicializar animaciones
-    //document.querySelectorAll('.module-card, .feature, .activity-item').forEach(element => {
-    //    element.classList.add('fade-up');
-    //});
+    document.querySelectorAll('.module-card, .feature, .activity-item').forEach(element => {
+        element.classList.add('fade-up');
+    });
 
     // Eventos de scroll
     window.addEventListener('scroll', animateOnScroll);

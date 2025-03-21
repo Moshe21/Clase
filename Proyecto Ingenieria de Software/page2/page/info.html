@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen Interactivo: Requisitos de Software</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2 onclick="mostrarMensaje('Importancia de los Requisitos de Software')">⚒️ Importancia de los Requisitos de Software</h2>
+    <img src="/page/img/img_smart.png" alt="Importancia de los requisitos">
+    
+    <ul>
+        <li>Los requisitos bien definidos establecen expectativas claras entre los stakeholders y los desarrolladores.
+        <li>Una documentación meticulosa minimiza cambios de alcance tardíos que afectan costos y cronogramas.
+        <li>La precisión en los requisitos facilita la trazabilidad y asegura la satisfacción del cliente.
+    </ul>
+    <h2 onclick="mostrarMensaje('Clasificación de Requisitos')">📌 Clasificación de Requisitos</h2>
+    <img src="clasificacion.jpg" alt="Clasificación de requisitos">
+    <ul>
+        <li>Los requisitos funcionales definen lo que el sistema debe hacer.</li>
+        <li>Los requisitos no funcionales establecen estándares de calidad como seguridad y rendimiento.</li>
+        <li>Una correcta clasificación mejora la arquitectura y la asignación de recursos.</li>
+    </ul>
+    
+    <h2 onclick="mostrarMensaje('Proceso de Ingeniería de Requisitos')">⚙️ Proceso de Ingeniería de Requisitos</h2>
+    <img src="proceso.jpg" alt="Proceso de ingeniería de requisitos">
+    <ol>
+        <li>Elicitación: Recopilar información mediante entrevistas y observaciones.</li>
+        <li>Análisis: Evaluar viabilidad y resolver conflictos.</li>
+        <li>Especificación: Documentar requisitos de manera estructurada.</li>
+    </ol>
+    
+    <h2 onclick="mostrarMensaje('Técnicas de Elicitación')">📝 Técnicas de Elicitación de Requisitos</h2>
+    <img src="tecnicas.jpg" alt="Técnicas de elicitación">
+    <ul>
+        <li>El uso de entrevistas, encuestas y prototipos ayuda a capturar requisitos precisos.</p>
+        <li>La observación directa permite descubrir procesos tácitos en el trabajo diario.</p>
+        <li>Los talleres colaborativos agilizan la toma de decisiones con los stakeholders.</p>
+    
+    <h2 onclick="mostrarMensaje('Especificación de Requisitos')">📄 Especificación de Requisitos</h2>
+    <img src="especificacion.jpg" alt="Especificación de requisitos">
+    <ul>
+        <li>Un SRS bien estructurado mejora la claridad y reduce ambigüedades.</li>
+        <li>El uso de modelos visuales como UML facilita la comprensión.</li>
+        <li>Definir requisitos con métricas claras evita malentendidos.</li>
+    </ul>
+    
+    <h2 onclick="mostrarMensaje('Validación de Requisitos')">✅ Validación de Requisitos</h2>
+    <img src="validacion.jpg" alt="Validación de requisitos">
+    <ol>
+        <li>Las revisiones formales detectan inconsistencias antes de la implementación.</li>
+        <li>Las pruebas de aceptación aseguran que el sistema cumple expectativas.</li>
+        <li>Una validación rigurosa reduce retrabajos en etapas avanzadas.</li>
+    </ol>
+    
+    <h2 onclick="mostrarMensaje('Gestión de Cambios en los Requisitos')">🔄 Gestión de Cambios en los Requisitos</h2>
+    <img src="cambios.jpg" alt="Gestión de cambios">
+    <p>Un control de cambios formal permite equilibrio entre flexibilidad y estabilidad.</p>
+    <p>El análisis de impacto evalúa costos y efectos en la arquitectura del sistema.</p>
+    <p>Las metodologías ágiles facilitan la adaptación de requisitos en cada iteración.</p>
+    
+    <h2 onclick="mostrarMensaje('Requisitos No Funcionales')">🛠️ Requisitos No Funcionales</h2>
+    <img src="no_funcionales.jpg" alt="Requisitos no funcionales">
+    <ul>
+        <li>Incluyen seguridad, rendimiento, escalabilidad y usabilidad.</li>
+        <li>Definir métricas específicas evita interpretaciones subjetivas.</li>
+        <li>Su correcta definición impacta decisiones arquitectónicas clave.</li>
+    </ul>
+    
+    <h2 onclick="mostrarMensaje('Modelización de Requisitos')">📊 Modelización de Requisitos</h2>
+    <img src="modelizacion.jpg" alt="Modelización de requisitos">
+    <ol>
+        <li>Los diagramas UML clarifican interacciones entre sistema y usuarios.</li>
+        <li>Los diagramas de flujo de datos mejoran la comprensión de procesos.</li>
+        <li>El uso de historias de usuario facilita la priorización de tareas.</li>
+    </ol>
+    
+    <h2 onclick="mostrarMensaje('Metodologías Ágiles y Requisitos')">🚀 Metodologías Ágiles y Requisitos</h2>
+    <img src="agil.jpg" alt="Metodologías ágiles y requisitos">
+    <p>Las historias de usuario permiten capturar requisitos de manera evolutiva.</p>
+    <p>El backlog priorizado facilita la adaptación a cambios en el proyecto.</p>
+    <p>La validación continua asegura que el sistema se ajusta a necesidades reales.</p>
+    <script>
+        function mostrarMensaje(seccion) {
+            alert('Has hecho clic en: ' + seccion);
+        }
+        function mostrarMensaje(seccion, imagen) {
+            alert("Explorando: " + seccion);
+            document.getElementById(imagen).style.display = "block";
+        }
+    </script>
+</body>
+</html>
+

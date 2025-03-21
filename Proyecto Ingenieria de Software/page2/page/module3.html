@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Módulo 1: Introducción a Casos de Uso - LearnSE</title>
+    <title>Módulo 3: Metodologías Ágiles - LearnSE</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -23,10 +23,10 @@
                             <a class="nav-link" href="./index.html"><i class="fas fa-home"></i> Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#modules"><i class="fas fa-book"></i> Módulos</a>
+                            <a class="nav-link" href="./index.html#modules"><i class="fas fa-book"></i> Módulos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> Acerca de</a>
+                            <a class="nav-link" href="./index.html#about"><i class="fas fa-info-circle"></i> Acerca de</a>
                         </li>
                     </ul>
                 </div>
@@ -38,7 +38,7 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
-                <li class="breadcrumb-item active">Módulo 1: Introducción a Casos de Uso</li>
+                <li class="breadcrumb-item active">Módulo 3: Metodologías Ágiles</li>
             </ol>
         </nav>
 
@@ -47,7 +47,7 @@
                 <!-- Sección del Juego -->
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h2 class="card-title">Juego: Identificación de Casos de Uso</h2>
+                        <h2 class="card-title">Juego: Metodologías Ágiles y Scrum</h2>
                         <div id="game-container" class="p-4">
                             <div class="game-header mb-4">
                                 <h3 id="nivel" class="mb-3">Nivel: 1</h3>
@@ -74,9 +74,9 @@
                         <div class="mt-4">
                             <h3>Objetivos de Aprendizaje</h3>
                             <ul>
-                                <li>Comprender los fundamentos de casos de uso</li>
-                                <li>Identificar actores y sus roles</li>
-                                <li>Escribir escenarios efectivos</li>
+                                <li>Comprender los principios ágiles</li>
+                                <li>Aprender sobre Scrum y sus ceremonias</li>
+                                <li>Escribir historias de usuario efectivas</li>
                             </ul>
                         </div>
                     </div>
@@ -89,9 +89,9 @@
                     <div class="card-body">
                         <h3>Recursos</h3>
                         <ul class="list-unstyled">
-                            <li><i class="fas fa-file-pdf"></i> Guía de Casos de Uso</li>
-                            <li><i class="fas fa-video"></i> Video Tutorial</li>
-                            <li><i class="fas fa-book"></i> Material de Lectura</li>
+                            <li><i class="fas fa-file-pdf"></i> Manifiesto Ágil</li>
+                            <li><i class="fas fa-video"></i> Video Tutorial de Scrum</li>
+                            <li><i class="fas fa-book"></i> Guía de Historias de Usuario</li>
                         </ul>
                     </div>
                 </div>
@@ -100,66 +100,75 @@
     </div>
 
     <script>
-        // Preguntas del juego específicas para casos de uso
+        // Preguntas del juego específicas para metodologías ágiles
         const preguntas = {
             1: [
                 {
-                    pregunta: "¿Qué es un actor en un caso de uso?",
-                    opciones: ["Un desarrollador del sistema",
-                             "Una entidad externa que interactúa con el sistema",
-                             "Una base de datos",
-                             "Un método en el código"],
-                    respuesta: "Una entidad externa que interactúa con el sistema",
-                    pista: "Puede ser una persona, otro sistema o dispositivo que usa el sistema."
+                    pregunta: "¿Qué es una historia de usuario?",
+                    opciones: ["Un documento técnico detallado",
+                             "Una descripción breve de una funcionalidad desde la perspectiva del usuario",
+                             "Un diagrama UML",
+                             "Un informe de errores"],
+                    respuesta: "Una descripción breve de una funcionalidad desde la perspectiva del usuario",
+                    pista: "Se escribe desde el punto de vista del usuario final."
                 },
                 {
-                    pregunta: "¿Cuál es el propósito principal de un caso de uso?",
-                    opciones: ["Mostrar el diseño de la base de datos",
-                             "Describir cómo el sistema interactúa con sus usuarios",
-                             "Listar los requisitos técnicos",
-                             "Definir la arquitectura del sistema"],
-                    respuesta: "Describir cómo el sistema interactúa con sus usuarios",
-                    pista: "Se enfoca en la interacción entre actores y sistema."
+                    pregunta: "¿Cuál es la duración típica de un sprint en Scrum?",
+                    opciones: ["1 día",
+                             "2-4 semanas",
+                             "6 meses",
+                             "1 año"],
+                    respuesta: "2-4 semanas",
+                    pista: "Es un período corto pero suficiente para entregar valor."
                 },
                 {
-                    pregunta: "¿Qué debe incluir un escenario principal en un caso de uso?",
-                    opciones: ["Solo los errores posibles",
-                             "La secuencia normal de eventos entre actor y sistema",
-                             "El código fuente",
-                             "Los requisitos de hardware"],
-                    respuesta: "La secuencia normal de eventos entre actor y sistema",
-                    pista: "Describe el flujo más común y exitoso de eventos."
+                    pregunta: "¿Qué es el Daily Scrum?",
+                    opciones: ["Una reunión mensual",
+                             "Una reunión diaria breve de sincronización del equipo",
+                             "Un documento de planificación",
+                             "Una fase de pruebas"],
+                    respuesta: "Una reunión diaria breve de sincronización del equipo",
+                    pista: "Ayuda al equipo a mantenerse alineado diariamente."
                 }
             ],
             2: [
                 {
-                    pregunta: "¿Qué es una precondición en un caso de uso?",
-                    opciones: ["El resultado final",
-                             "Un estado que debe existir antes de que el caso de uso pueda comenzar",
-                             "Un error en el sistema",
-                             "Una función del código"],
-                    respuesta: "Un estado que debe existir antes de que el caso de uso pueda comenzar",
-                    pista: "Define las condiciones necesarias para iniciar el caso de uso."
+                    pregunta: "¿Qué es el Product Backlog?",
+                    opciones: ["Un error en el código",
+                             "La lista priorizada de funcionalidades del producto",
+                             "Un servidor de respaldo",
+                             "Un tipo de reunión"],
+                    respuesta: "La lista priorizada de funcionalidades del producto",
+                    pista: "Contiene todo lo que se necesita desarrollar en el producto."
                 },
                 {
-                    pregunta: "¿Qué es un flujo alternativo?",
-                    opciones: ["El escenario principal",
-                             "Una variación del flujo normal que maneja excepciones",
-                             "Un error del sistema",
-                             "Un requisito técnico"],
-                    respuesta: "Una variación del flujo normal que maneja excepciones",
-                    pista: "Describe qué sucede cuando algo sale diferente al flujo principal."
+                    pregunta: "¿Cuál es el rol del Scrum Master?",
+                    opciones: ["El jefe del proyecto",
+                             "Un facilitador que ayuda al equipo a seguir Scrum",
+                             "El cliente principal",
+                             "El desarrollador senior"],
+                    respuesta: "Un facilitador que ayuda al equipo a seguir Scrum",
+                    pista: "Ayuda a eliminar impedimentos y facilita el proceso."
                 }
             ],
             3: [
                 {
-                    pregunta: "¿Cuál es la diferencia entre un actor primario y secundario?",
-                    opciones: ["No hay diferencia",
-                             "El primario inicia el caso de uso, el secundario proporciona servicios",
-                             "El primario es más importante",
-                             "El secundario siempre es un sistema"],
-                    respuesta: "El primario inicia el caso de uso, el secundario proporciona servicios",
-                    pista: "Se distinguen por quién inicia la interacción."
+                    pregunta: "¿Qué es la velocidad en Scrum?",
+                    opciones: ["La rapidez de programación",
+                             "La cantidad de trabajo que un equipo puede completar en un sprint",
+                             "El tiempo de respuesta del servidor",
+                             "La velocidad de la red"],
+                    respuesta: "La cantidad de trabajo que un equipo puede completar en un sprint",
+                    pista: "Se usa para planificar y estimar sprints futuros."
+                },
+                {
+                    pregunta: "¿Qué es un incremento en Scrum?",
+                    opciones: ["Un aumento de sueldo",
+                             "La suma de todos los elementos del Product Backlog completados en un sprint",
+                             "Una mejora en el servidor",
+                             "Un nuevo empleado"],
+                    respuesta: "La suma de todos los elementos del Product Backlog completados en un sprint",
+                    pista: "Es el resultado tangible del sprint."
                 }
             ]
         };
