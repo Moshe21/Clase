@@ -13,7 +13,7 @@
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    background-color: #cdcdcd;
+    background-color: #fc0000;
 }
 
 .header {
@@ -179,7 +179,7 @@ body {
     background-color: #f4f4f4;
 }
 h2 {
-    background-color: #007BFF;
+    background-color: #EF7D00;
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -198,4 +198,10 @@ img {
     margin: 10px auto;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.lead {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
 }
