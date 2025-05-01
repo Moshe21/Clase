@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 1: Introducción a Casos de Uso - LearnSE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand">LearnSE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html"><i class="fas fa-home"></i> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#modules"><i class="fas fa-book"></i> Módulos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> Acerca de</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+                <li class="breadcrumb-item active">Módulo 1: Introducción a Casos de Uso</li>
+            </ol>
+        </nav>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Sección del Juego -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Juego: Identificación de Casos de Uso</h2>
+                        <div id="game-container" class="p-4">
+                            <div class="game-header mb-4">
+                                <h3 id="nivel" class="mb-3">Nivel: 1</h3>
+                                <div class="progress mb-3">
+                                    <div id="progreso" class="progress-bar" role="progressbar" style="width: 0%"></div>
+                                </div>
+                            </div>
+
+                            <div class="question-container">
+                                <p id="pregunta" class="h5 mb-4"></p>
+                                <div id="opciones" class="d-grid gap-3">
+                                    <!-- Las opciones se generarán dinámicamente -->
+                                </div>
+                                <p id="pista" class="mt-3 text-info"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenido del módulo -->
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Contenido del Módulo</h2>
+                        <div class="mt-4">
+                            <h3>Objetivos de Aprendizaje</h3>
+                            <ul>
+                                <li>Comprender los fundamentos de casos de uso</li>
+                                <li>Identificar actores y sus roles</li>
+                                <li>Escribir escenarios efectivos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <!-- Recursos adicionales -->
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Recursos</h3>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-file-pdf"></i> Guía de Casos de Uso</li>
+                            <li><i class="fas fa-video"></i> Video Tutorial</li>
+                            <li><i class="fas fa-book"></i> Material de Lectura</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Preguntas del juego específicas para casos de uso
+        const preguntas = {
+            1: [
+                {
+                    pregunta: "¿Qué es un actor en un caso de uso?",
+                    opciones: ["Un desarrollador del sistema",
+                             "Una entidad externa que interactúa con el sistema",
+                             "Una base de datos",
+                             "Un método en el código"],
+                    respuesta: "Una entidad externa que interactúa con el sistema",
+                    pista: "Puede ser una persona, otro sistema o dispositivo que usa el sistema."
+                },
+                {
+                    pregunta: "¿Cuál es el propósito principal de un caso de uso?",
+                    opciones: ["Mostrar el diseño de la base de datos",
+                             "Describir cómo el sistema interactúa con sus usuarios",
+                             "Listar los requisitos técnicos",
+                             "Definir la arquitectura del sistema"],
+                    respuesta: "Describir cómo el sistema interactúa con sus usuarios",
+                    pista: "Se enfoca en la interacción entre actores y sistema."
+                },
+                {
+                    pregunta: "¿Qué debe incluir un escenario principal en un caso de uso?",
+                    opciones: ["Solo los errores posibles",
+                             "La secuencia normal de eventos entre actor y sistema",
+                             "El código fuente",
+                             "Los requisitos de hardware"],
+                    respuesta: "La secuencia normal de eventos entre actor y sistema",
+                    pista: "Describe el flujo más común y exitoso de eventos."
+                }
+            ],
+            2: [
+                {
+                    pregunta: "¿Qué es una precondición en un caso de uso?",
+                    opciones: ["El resultado final",
+                             "Un estado que debe existir antes de que el caso de uso pueda comenzar",
+                             "Un error en el sistema",
+                             "Una función del código"],
+                    respuesta: "Un estado que debe existir antes de que el caso de uso pueda comenzar",
+                    pista: "Define las condiciones necesarias para iniciar el caso de uso."
+                },
+                {
+                    pregunta: "¿Qué es un flujo alternativo?",
+                    opciones: ["El escenario principal",
+                             "Una variación del flujo normal que maneja excepciones",
+                             "Un error del sistema",
+                             "Un requisito técnico"],
+                    respuesta: "Una variación del flujo normal que maneja excepciones",
+                    pista: "Describe qué sucede cuando algo sale diferente al flujo principal."
+                }
+            ],
+            3: [
+                {
+                    pregunta: "¿Cuál es la diferencia entre un actor primario y secundario?",
+                    opciones: ["No hay diferencia",
+                             "El primario inicia el caso de uso, el secundario proporciona servicios",
+                             "El primario es más importante",
+                             "El secundario siempre es un sistema"],
+                    respuesta: "El primario inicia el caso de uso, el secundario proporciona servicios",
+                    pista: "Se distinguen por quién inicia la interacción."
+                }
+            ]
+        };
+
+        // Variables del juego
+        let nivel = 1;
+        let respuestasCorrectas = 0;
+        let totalParaSubir = 3;
+        let preguntaActual = null;
+        let intentos = 0;
+
+        // Elementos del DOM
+        const nivelElement = document.getElementById('nivel');
+        const progresoElement = document.getElementById('progreso');
+        const preguntaElement = document.getElementById('pregunta');
+        const opcionesElement = document.getElementById('opciones');
+        const pistaElement = document.getElementById('pista');
+
+        // Función para cargar nueva pregunta
+        function nuevaPregunta() {
+            intentos = 0;
+            pistaElement.textContent = '';
+
+            if (!preguntas[nivel]) {
+                alert('¡Felicidades! Has completado todas las preguntas. 🏆');
+                return;
+            }
+
+            preguntaActual = preguntas[nivel][Math.floor(Math.random() * preguntas[nivel].length)];
+            preguntaElement.textContent = preguntaActual.pregunta;
+
+            // Limpiar opciones anteriores
+            opcionesElement.innerHTML = '';
+
+            // Mezclar opciones
+            const opcionesMezcladas = [...preguntaActual.opciones].sort(() => Math.random() - 0.5);
+
+            // Crear botones para cada opción
+            opcionesMezcladas.forEach(opcion => {
+                const button = document.createElement('button');
+                button.className = 'btn btn-outline-primary';
+                button.textContent = opcion;
+                button.onclick = () => verificarRespuesta(opcion);
+                opcionesElement.appendChild(button);
+            });
+        }
+
+        // Función para verificar respuesta
+        function verificarRespuesta(respuestaSeleccionada) {
+            if (respuestaSeleccionada === preguntaActual.respuesta) {
+                alert('✅ ¡Correcto! 🎉');
+                respuestasCorrectas++;
+                progresoElement.style.width = `${(respuestasCorrectas/totalParaSubir) * 100}%`;
+
+                if (respuestasCorrectas >= totalParaSubir) {
+                    nivel++;
+                    respuestasCorrectas = 0;
+                    nivelElement.textContent = `Nivel: ${nivel}`;
+                    alert(`🎉 ¡Subiste al Nivel ${nivel}! 🔥`);
+                }
+
+                nuevaPregunta();
+            } else {
+                intentos++;
+                if (intentos === 1) {
+                    pistaElement.textContent = `❌ Incorrecto. Pista: ${preguntaActual.pista}`;
+                } else {
+                    alert(`❌ Incorrecto. La respuesta correcta era: ${preguntaActual.respuesta}`);
+                    nuevaPregunta();
+                }
+            }
+        }
+
+        // Iniciar el juego
+        window.onload = nuevaPregunta;
+    </script>
+
+    <footer class="footer mt-5 py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 LearnSE - Plataforma de Aprendizaje de Ingeniería de Software</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

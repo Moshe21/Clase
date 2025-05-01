@@ -1,0 +1,8 @@
+agency_id,agency_name,agency_url,agency_timezone,agency_lang,agency_phone
+1,Transmilenio-Troncal,https://www.transmilenio.gov.co/,America/Bogota,es,(+57)601-482-4304
+2,TRANSMILENIO-DUAL,https://www.transmilenio.gov.co/,America/Bogota,es,(+57)601-482-4304
+3,TRANSMILENIO-URBANA,https://www.transmilenio.gov.co/,America/Bogota,es,(+57)601-482-4304
+4,TRANSMILENIO-ALIMENTADORA,https://www.transmilenio.gov.co/,America/Bogota,es,(+57)601-482-4304
+5,TRANSMILENIO-COMPLEMENTARIA,https://www.transmilenio.gov.co/,America/Bogota,es,(+57)601-482-4304
+6,TRANSMILENIO-ESPECIAL,https://www.transmilenio.gov.co/,America/Bogota,es,(+57)601-482-4304
+7,CABLE,https://www.transmilenio.gov.co/,America/Bogota,es,(+57)601-482-4304

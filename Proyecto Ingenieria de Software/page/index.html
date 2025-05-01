@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Software Engineering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand">LearnSE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html"><i class="fas fa-home"></i> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#modules"><i class="fas fa-book"></i> Módulos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> Acerca de</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="container text-center">
+            <h1>Aprende Ingeniería de Software</h1>
+            <p class="lead">Plataforma interactiva para el aprendizaje de casos de uso y más</p>
+        </div>
+    </div>
+
+    <section id="modules" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">Módulos de Aprendizaje</h2>
+            <div class="row g-4" id="modulesList">
+                <!-- Los módulos se cargarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Acerca de la Plataforma</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <p class="text-center mb-5">
+                        Esta plataforma está diseñada para ayudarte a aprender Ingeniería de Software 
+                        de manera práctica y efectiva, con especial énfasis en casos de uso y metodologías ágiles.
+                    </p>
+                </div>
+            </div>
+            <div class="features row g-4">
+                <div class="col-md-4">
+                    <div class="feature card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-graduation-cap fa-3x mb-3 text-primary"></i>
+                            <h3>Aprendizaje Estructurado</h3>
+                            <p>Contenido organizado en módulos progresivos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-laptop-code fa-3x mb-3 text-primary"></i>
+                            <h3>Casos Prácticos</h3>
+                            <p>Ejemplos reales y ejercicios interactivos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-project-diagram fa-3x mb-3 text-primary"></i>
+                            <h3>Casos de Uso</h3>
+                            <p>Aprende a documentar y analizar requisitos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-5 py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Moises Zabalet - Plataforma de Aprendizaje de UNIVERSIDAD SAN BUENAVENTURA </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
